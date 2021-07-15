@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap");
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+:root {
+  --color1: #4040ed;
+  --color2: #e664da;
+  --color3: #ed4040;
+  --color4: rgba(255, 175, 141, 1);
+  --color5: rgba(241, 172, 197, 1);
+  --color7: #eec841;
+  --color8: #40ed83;
+  --color9: #a31b00;
+  --color10: rgba(255, 212, 194, 1);
+  --color11: rgba(255, 241, 235, 1);
+
+  --color-white: #ffffff;
+  --color-black: #111;
+
+  --color-gray: #ddd;
+
+  --color-bad: var(--color3);
+
+  --color-theme: var(--color4);
+}
+
+:root {
+  --font-base: 500 15px/1.5 "DM Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-titles: "Fraunces", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  --header-height: 60px;
+  --nav-height: 61px;
+
+  --background-color: #fff;
+  --background-tint-color: rgba(248, 248, 254, 1);
+  --color: #2c2929;
+
+  --color-highlight: var(--color3);
+  --color-highlight2: var(--color5);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background-color: #111;
+    --background-tint-color: #2c2929;
+    --color: #eee; */
+  }
+}
+
+html {
+  font: var(--font-base);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  background-color: var(--color4);
+  color: var(--color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  -webkit-overflow-scrolling: touch !important; /* Fixar laggig scroll på IOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Fixar grå ton på IOS */
+  touch-action: manipulation !important; /* Fixar laggig (300ms) touch på touchenheter */
+
+  overscroll-behavior-block: none;
+
+  image-orientation: from-image;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  fill: currentColor;
+}
+
+select,
+button,
+input,
+textarea {
+  text-align: inherit;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+::placeholder {
+  color: inherit;
+}
+
+option {
+  color: initial;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+em,
+i {
+  font-style: italic;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  /* text-decoration: inherit; */
+  font: inherit;
+}
+
+/* ----------------- */
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+  padding: 40px 0;
+  box-sizing: border-box;
+  animation: fade-in 0.7s linear;
+  animation-fill-mode: forwards;
+  text-align: center;
+}
+
+p {
+  font-family: var(--font-family-titles);
+  font-size: 1.3rem;
+}
+
+h1 {
+  margin-top: 3rem;
+}
+
+.logo {
+  max-width: 80%;
+  margin: 0 auto;
+}
