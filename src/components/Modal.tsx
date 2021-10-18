@@ -28,16 +28,7 @@ const ModalContent = ({
   withClose,
   isOpen,
   onClose,
-}: ContentProps) => (
-  <div className="popup-content">
-    {withClose !== false && (
-      <button type="button" className="close" onClick={onClose}>
-        Close
-      </button>
-    )}
-    {children}
-  </div>
-);
+}: ContentProps) => <div className="popup-content">{children}</div>;
 
 const ModalContentMemoized = memo(ModalContent, (prev) => !prev.isOpen);
 

@@ -69,6 +69,10 @@ table {
   --color: #111;
 }
 
+:focus {
+  outline: none;
+}
+
 html {
   font: var(--font-base);
   margin: 0;

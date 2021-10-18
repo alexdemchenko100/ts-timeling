@@ -19,7 +19,9 @@ const Consent = () => {
 
   return (
     <Modal contentLabel="Consent" onClose={() => {}} isOpen={modalIsOpen}>
-      <h1>Accept cookies?</h1>
+      <div className="content">
+        <h1>Accept cookies?</h1>
+      </div>
       <div className="bottom">
         <button className="button" onClick={onHandleDecline}>
           Decline

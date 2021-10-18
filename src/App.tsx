@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import "./App.scss";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import Consent from "./components/Consent";
 
 const App = () => {
   return (
     <>
+      <Consent />
       <Header>
         <a href="#FormHeading" className="button big">
           Notify me
