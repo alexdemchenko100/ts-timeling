@@ -1,0 +1,30 @@
+@import "../styles/Variables";
+
+.columns {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+
+  @media all and (max-width: $mobile-max) {
+    padding: 0;
+    flex-direction: column;
+    text-align: center;
+
+    &.last {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media all and (min-width: $desktop-min) {
+    &.reverse-desktop {
+      flex-direction: row-reverse;
+    }
+    > video {
+      width: 50%;
+    }
+  }
+
+  > div {
+    padding: 0 32px;
+  }
+}

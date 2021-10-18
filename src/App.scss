@@ -1,0 +1,256 @@
+@import "./styles/Variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img,
+video {
+  max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #111;
+}
+
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-base: 400 20px/1.5 "Lora", var(--font-family);
+  --font-family-titles: "Lora", var(--font-family);
+
+  --background-color: #ffebe3;
+  --color: #111;
+}
+
+html {
+  font: var(--font-base);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--color);
+  // animation: fade-in 1s ease-out;
+  overflow-wrap: break-word;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  -webkit-touch-callout: none;
+  -webkit-overflow-scrolling: touch !important; /* Fixar laggig scroll på IOS */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Fixar grå ton på IOS */
+  touch-action: manipulation !important; /* Fixar laggig (300ms) touch på touchenheter */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overscroll-behavior-block: none;
+
+  image-orientation: from-image;
+}
+
+svg {
+  fill: currentColor;
+}
+
+select,
+button,
+input,
+textarea {
+  text-align: inherit;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+option {
+  color: initial;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+em,
+i {
+  font-style: italic;
+}
+
+p {
+  margin: var(--spacing-sm) 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+
+  @media all and (max-width: $mobile-max) {
+    font-size: 36px;
+  }
+  &.big {
+    font-size: 64px;
+    @media all and (max-width: $mobile-max) {
+      font-size: 46px;
+    }
+  }
+}
+
+.logo {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.button {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  display: inline-block;
+  border-radius: 0.8em;
+  font-weight: 700;
+}
+
+.button.big {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 1.2rem;
+}
+
+.button.primary {
+  background-color: #ffaf8d;
+  color: var(--color);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form .button {
+  align-self: center;
+}
+
+.sr-only {
+  display: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+  text-align: left;
+  padding: var(--spacing) 0;
+  width: 100%;
+}
+
+input[type="radio"] {
+  position: absolute;
+}
+input[type="radio"] + label {
+  margin: var(--spacing) 0 var(--spacing) var(--spacing);
+  padding-left: var(--spacing-md);
+  display: inline-block;
+  position: relative;
+}
+input[type="radio"] + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  border-radius: 100%;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-white);
+  width: 0.7em;
+  height: 0.7em;
+}
+
+input[type="radio"]:checked + label:before {
+  background-color: var(--color-white);
+}
+
+/* ----------------- */
+
+@media all and (max-width: $mobile-max) {
+  .non-mobile {
+    display: none;
+  }
+}
+@media all and (min-width: $desktop-min) {
+  .mobile {
+    display: none;
+  }
+}
+
+body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+main {
+  flex-shrink: 0;
+}
+
+.content-width {
+  max-width: 100%;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#root {
+  height: 100%;
+}

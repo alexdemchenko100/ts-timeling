@@ -1,0 +1,42 @@
+@import "../styles/Variables";
+
+footer {
+  color: var(--color-white);
+  background-color: #111;
+  padding: 40px 32px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  > .top {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+    display: flex;
+    @media all and (max-width: $mobile-max) {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .logo {
+      width: 190px;
+    }
+    > .links {
+      flex-grow: 1;
+    }
+  }
+
+  > .bottom {
+    > p {
+      flex-grow: 1;
+      font-size: 0.7em;
+    }
+    .socials {
+      display: flex;
+    }
+    .socials a {
+      margin-left: 20px;
+    }
+  }
+}
