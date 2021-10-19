@@ -28,6 +28,10 @@ const strings = {
   ladies_first_content_long:
     "Who runs the world? Exactly. That’s why we’ve developed a system that lets you confidentially share your experience with our admins, so that we can make Timeling a bad-date-free place for you to enjoy.",
   "404_status": "Not found",
+  thank_you_submission_recieved:
+    "Thank you! Your submission has been received!",
+  something_went_wrong: "Something went wrong 😢",
+  we_value_your_privacy: "We value your privacy",
 };
 
 export default strings;
