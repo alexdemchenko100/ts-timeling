@@ -12,7 +12,7 @@ const Header = ({ children }: any) => {
           <FormattedMessage id="headline" />
         </h1>
         <p className="non-mobile">
-          <FormattedMessage id="sub_headline" />
+          <FormattedMessage id="headline_sub" />
         </p>
         {children}
       </div>
