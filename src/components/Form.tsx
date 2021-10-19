@@ -44,6 +44,9 @@ const Form = () => {
         body: JSON.stringify(data), // body data type must match "Content-Type" header
       });
       setStatus("success");
+
+      //For tracking
+      window.location.hash = "success";
     } catch (e) {
       setStatus("error");
     }
