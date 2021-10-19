@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "*"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "index.html"
+  },
+  "globalHeaders": {
+    "content-security-policy": "default-src https: 'unsafe-inline'; object-src 'none'",
+    "x-xss-protection": "1; mode=block",
+    "x-frame-options": "SAMEORIGIN",
+    "referrer-policy": "strict-origin-when-cross-origin"
+  }
+}
