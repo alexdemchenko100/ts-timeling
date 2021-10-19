@@ -1,25 +1,32 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
+import "./Consent.scss";
+
 const getHasConsent = () => !!window.localStorage.getItem("fbGrantConsent");
 
 const Consent = () => {
   const [modalIsOpen, setModalIsOpen] = useState(!getHasConsent());
 
   const onHandleDecline = () => {
-    window.localStorage.setItem("fbGrantConsent", "false");
+    window.localStorage.setItem("cookiesConsent", "false");
     setModalIsOpen(false);
   };
 
   const onHandleAccept = () => {
-    window.localStorage.setItem("fbGrantConsent", "true");
+    window.localStorage.setItem("cookiesConsent", "true");
     setModalIsOpen(false);
     (window as any).fbq("consent", "grant");
   };
 
   return (
-    <Modal contentLabel="Consent" onClose={() => {}} isOpen={modalIsOpen}>
-      <div className="content">
+    <Modal
+      contentLabel="Consent"
+      onClose={() => {}}
+      isOpen={modalIsOpen}
+      className="popup-consent"
+    >
+      <div className="header">
         <h1>Accept cookies?</h1>
       </div>
       <div className="bottom">

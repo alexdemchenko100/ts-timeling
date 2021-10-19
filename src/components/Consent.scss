@@ -1,0 +1,15 @@
+.popup-consent {
+  height: auto;
+  bottom: 0;
+  top: auto;
+  background: none;
+  backdrop-filter: none;
+
+  > div > .popup-container {
+    margin-bottom: 0;
+
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
