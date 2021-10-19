@@ -1,4 +1,4 @@
-@import "./styles/Variables";
+@import "../styles/Variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 
@@ -151,11 +151,6 @@ h1 {
   }
 }
 
-.logo {
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .button {
   color: var(--color-white);
   background-color: var(--color-black);
@@ -204,8 +199,8 @@ input[type="radio"] {
   position: absolute;
 }
 input[type="radio"] + label {
-  margin: var(--spacing) 0 var(--spacing) var(--spacing);
-  padding-left: var(--spacing-md);
+  margin: var(--spacing) var(--spacing-sm);
+  padding-left: var(--spacing);
   display: inline-block;
   position: relative;
 }
@@ -257,4 +252,10 @@ main {
 
 #root {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > .route-container {
+    flex-grow: 1;
+  }
 }

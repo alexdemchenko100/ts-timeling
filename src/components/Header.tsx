@@ -1,16 +1,18 @@
 import Logo from "./Logo";
 
 import "./Header.scss";
+import { FormattedMessage } from "react-intl";
 
 const Header = ({ children }: any) => {
   return (
     <header>
       <div className="container">
         <Logo />
-        <h1 className="big">We have a date for you</h1>
+        <h1 className="big">
+          <FormattedMessage id="headline" />
+        </h1>
         <p className="non-mobile">
-          Meet Timeling. Your calendar-based dating app for real life
-          connections.
+          <FormattedMessage id="sub_headline" />
         </p>
         {children}
       </div>

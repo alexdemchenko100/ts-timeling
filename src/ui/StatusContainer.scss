@@ -1,0 +1,100 @@
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+}
+
+.status-container {
+  // width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  flex-grow: 1;
+
+  > div {
+    text-align: center;
+    padding: 0 20px;
+    max-width: 400px;
+
+    > .icon {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 8px;
+      color: var(--color-peach);
+    }
+
+    > .heading {
+      font-size: 1.6rem;
+      margin: 0 0 8px;
+    }
+
+    > .content {
+      margin: 0 0 8px;
+
+      > p:first-child {
+        margin-top: 0;
+      }
+
+      > .button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      > .actions {
+        margin-top: var(--spacing-md);
+      }
+    }
+
+    > .loader {
+      > svg {
+        animation: spin-pulse 2.5s ease-in-out infinite;
+
+        .ring#n {
+          animation: petal-grow-n 2.5s ease-in-out infinite;
+          transform-origin: bottom center;
+        }
+        .ring#e {
+          animation: petal-grow-e 2.5s ease-in-out infinite;
+          transform-origin: center right;
+        }
+        .ring#s {
+          animation: petal-grow-s 2.5s ease-in-out infinite;
+          transform-origin: top center;
+        }
+        .ring#w {
+          animation: petal-grow-w 2.5s ease-in-out infinite;
+          transform-origin: center left;
+        }
+      }
+    }
+
+    // > .loader:before {
+    //   transition: all 0.15s ease-in-out;
+    //   content: " ";
+    //   vertical-align: middle;
+    //   margin: 0 5px;
+    //   display: inline-block;
+    //   height: 2em;
+    //   width: 2em;
+    //   border-radius: 100%;
+    //   border-bottom-color: transparent;
+    //   animation: spin 1s linear infinite;
+    // }
+
+    > .reaction {
+      font-size: 2em;
+      font-family: monospace;
+      display: block;
+      margin: 8px 5px;
+    }
+
+    > .actions-container > .button {
+      margin-top: 16px;
+    }
+  }
+}

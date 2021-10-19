@@ -19,11 +19,28 @@ footer {
       flex-direction: column;
     }
 
-    .logo {
+    > .logo {
       width: 190px;
     }
+
     > .links {
-      flex-grow: 1;
+      margin-left: auto;
+      text-align: center;
+
+      @media all and (max-width: $mobile-max) {
+        margin: 0;
+      }
+
+      > a {
+        margin-left: var(--spacing);
+        @media all and (max-width: $mobile-max) {
+          margin-top: var(--spacing-md);
+          margin-bottom: var(--spacing-md);
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+      }
     }
   }
 

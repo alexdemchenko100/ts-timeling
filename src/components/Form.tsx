@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 import "./Form.scss";
 
 const Form = () => {
@@ -15,14 +16,14 @@ const Form = () => {
   return (
     <section className="form">
       <h1 id="FormHeading">
-        A dating app for dates?
+        <FormattedMessage id="a_dating_app_for_dates" />
         <br />
-        It's about time
+        <FormattedMessage id="its_about_time" />
       </h1>
       <form onSubmit={onSubmit}>
         <div className="row">
           <label className="sr-only" htmlFor="Name">
-            Name
+            <FormattedMessage id="name" />
           </label>
           <input
             type="text"
@@ -35,7 +36,7 @@ const Form = () => {
         </div>
         <div className="row">
           <label className="sr-only" htmlFor="Email">
-            Email
+            <FormattedMessage id="email" />
           </label>
           <input
             type="email"
@@ -48,16 +49,22 @@ const Form = () => {
         </div>
         <div className="row radios">
           <input type="radio" name="gender" id="Gender_0" required />
-          <label htmlFor="Gender_0">Female</label>
+          <label htmlFor="Gender_0">
+            <FormattedMessage id="female" />
+          </label>
           <input type="radio" name="gender" id="Gender_1" required />
-          <label htmlFor="Gender_1">Male</label>
+          <label htmlFor="Gender_1">
+            <FormattedMessage id="male" />
+          </label>
           <input type="radio" name="gender" id="Gender_null" required />
-          <label htmlFor="Gender_null">Other</label>
+          <label htmlFor="Gender_null">
+            <FormattedMessage id="other" />
+          </label>
         </div>
         <button
           className={classNames("button big primary", { loading: isLoading })}
         >
-          Let's meet up
+          <FormattedMessage id="lets_meet_up" />
         </button>
       </form>
     </section>

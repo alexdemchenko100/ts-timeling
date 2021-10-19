@@ -1,42 +1,46 @@
 import Logo from "./Logo";
 
 import "./Footer.scss";
+import { FormattedMessage } from "react-intl";
+import Link from "./global/Link";
 
 const Footer = () => {
   return (
     <footer>
       <div className="top">
         <Logo />
-        <div className="links"></div>
+        <div className="links">
+          <Link href="/terms">
+            <FormattedMessage id="terms_of_service" />
+          </Link>
+          <Link href="/privacy">
+            <FormattedMessage id="privacy_policy" />
+          </Link>
+          <Link href="/cookies">
+            <FormattedMessage id="cookies" />
+          </Link>
+        </div>
       </div>
       <div className="bottom">
         <p>© 2021 Timeling Inc.</p>
         <div className="socials">
-          <a
-            href="https://www.facebook.com/timelingapp"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="https://www.facebook.com/timelingapp">
             <img
               src="/assets/logo/facebook.svg"
               loading="lazy"
               alt="Facebook"
             />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
+          </Link>
+          <Link href="https://twitter.com">
             <img src="/assets/logo/twitter.svg" loading="lazy" alt="Twitter" />
-          </a>
-          <a
-            href="https://www.instagram.com/timelingapp"
-            target="_blank"
-            rel="noreferrer"
-          >
+          </Link>
+          <Link href="https://www.instagram.com/timelingapp">
             <img
               src="/assets/logo/instagram.svg"
               loading="lazy"
               alt="Instagram"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
