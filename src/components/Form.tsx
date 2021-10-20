@@ -31,6 +31,8 @@ const Form = () => {
     };
 
     try {
+      setStatus("success");
+
       await fetch("https://app.timeling.com/api/misc/signup", {
         method: "POST",
         mode: "cors",
@@ -40,8 +42,6 @@ const Form = () => {
         referrerPolicy: "no-referrer",
         body: JSON.stringify(data),
       });
-
-      setStatus("success");
 
       //For tracking
       window.location.hash = "success";
