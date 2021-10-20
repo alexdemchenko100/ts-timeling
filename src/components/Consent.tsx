@@ -3,7 +3,7 @@ import Modal from "./Modal";
 
 import "./Consent.scss";
 
-const getHasConsent = () => !!window.localStorage.getItem("fbGrantConsent");
+const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
 
 const Consent = () => {
   const [modalIsOpen, setModalIsOpen] = useState(!getHasConsent());
