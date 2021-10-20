@@ -34,7 +34,7 @@ const Form = () => {
       await fetch("https://app.timeling.com/api/misc/signup", {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
-        credentials: "include",
+        // credentials: "include",
         headers: {
           "Content-Type": "application/json",
           // 'Content-Type': 'application/x-www-form-urlencoded',
