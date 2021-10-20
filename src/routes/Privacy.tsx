@@ -111,25 +111,25 @@ const PrivacyRoute = () => {
             <h2>Account information and other correspondence</h2>
             <ol className="list">
               <li>
-                <strong>When you create an account with us </strong>(or someone
-                does so on your behalf) there will be personal information about
-                you relating to that account such as your name, contact details,
+                <b>When you create an account with us </b>(or someone does so on
+                your behalf) there will be personal information about you
+                relating to that account such as your name, contact details,
                 profile details, and potentially correspondence with us about
                 your account.
               </li>
               <li>
-                We need certain information to set up your account and you must
-                provide this in order to have an account with us, if you do not,
-                you will not be able to create or maintain an account. Mandatory
-                information fields are generally set out when you are setting up
-                an account, but in particular, you must provide the following
-                information:
+                <b>We need certain information</b> to set up your account and
+                you must provide this in order to have an account with us, if
+                you do not, you will not be able to create or maintain an
+                account. Mandatory information fields are generally set out when
+                you are setting up an account, but these will normally include
+                the following information:
                 <ol className="list">
-                  <li>Your name</li>
+                  <li>Your name.</li>
                   <li>Your phone number with country code.</li>
                   <li>Your date of birth.</li>
                   <li>The gender you identify as.</li>
-                  <li>Your height</li>
+                  <li>Your height.</li>
                   <li>At least two photos of you.</li>
                   <li>
                     At least three (3) areas of interest selected from a list of
@@ -138,42 +138,43 @@ const PrivacyRoute = () => {
                   <li>Your payment details.</li>
                 </ol>
               </li>
+
               <li>
-                <strong>Special Category Data. </strong>When you create an
-                account with us you may add extra information to your profile.
-                This might include information like sexual orientation and
-                preferences (such as the gender you are interested in meeting
-                and the type of relationship you are looking for), race or
-                ethnicity, religious beliefs, health data (such as lifestyle and
-                health habits, drinking and smoking behaviour) and political
-                opinions. This is known as &ldquo;special category&rdquo; data
-                and if you do choose to add this information to your account,
-                you consent to our processing of that information. You may
-                withdraw this consent by removing this information from your
-                account at any time. Please ensure you do not provide any
+                <b>When you create an account with us</b> you may add extra
+                information or preferences to your profile.
+              </li>
+
+              <li>
+                <b>Some of the information that you choose to provide us</b> as
+                set out in the paragraphs above may be considered “special”,
+                “special category” or “sensitive” in certain jurisdictions, for
+                example your ethnicity, sexual orientation or religious beliefs.
+                By choosing to provide this information, you consent to our
+                processing of that information. You may withdraw this consent by
+                removing this information from your account at any time or by
+                closing your account. Please ensure you do not provide any
                 information of this type which you do not want to be visible on
                 your profile.
               </li>
+
               <li>
-                <strong>Other optional profile information. </strong>You can
-                also upload more information about yourself, such as your
-                profession, star sign, whether you have children, education
-                level, university attended, information about events you have
-                attended, and answers to profile questions. We also have free
-                text fields for your profile and information you provide in them
-                will be displayed in your profile. If you do choose to add this
+                <b>Other optional profile information. </b>You can also upload
+                more information about yourself, such as your profession, star
+                sign, whether you have children, education level, university
+                attended, information about events you have attended, and
+                answers to profile questions. We also have free text fields for
+                your profile and information you provide in them will be
+                displayed in your profile. If you do choose to add this
                 information to your account, you consent to our processing of
                 that information. You may withdraw this consent by removing this
                 information from your account at any time.
               </li>
               <li>
-                <strong>Account recovery. </strong>If you provide your email
-                address, we will use this for account recovery purposes.
+                <b>Account recovery. </b>If you provide your email address, we
+                will use this for account recovery purposes.
               </li>
               <li>
-                <strong>
-                  Chatting and interactions through your account.{" "}
-                </strong>
+                <b>Chatting and interactions through your account. </b>
                 Please ensure that when you use any chat or other communication
                 features that you do not share any personal information you do
                 not want to be seen by recipients of that chat or interaction.
@@ -194,35 +195,35 @@ const PrivacyRoute = () => {
                 experience for you as possible.
               </li>
               <li>
-                <strong>Other correspondence or interaction</strong> (for
-                example by email, telephone, post, SMS or via our website or
-                app) between you and us, will include personal information (such
-                as names and contact details) in that correspondence. This may
-                include enquiries, reviews, follow-up comments or complaints
-                lodged by or against you and disputes with you.
+                <b>Other correspondence or interaction</b> (for example by
+                email, telephone, post, SMS or via our website or app) between
+                you and us, will include personal information (such as names and
+                contact details) in that correspondence. This may include
+                enquiries, reviews, follow-up comments or complaints lodged by
+                or against you and disputes with you.
               </li>
               <li>
-                <strong>Social media</strong>. If we engage with you on social
-                media, we may use information you share with us (including your
-                social media handle or profile) or which is available from your
-                account to inform our correspondence with you.
+                <b>Social media</b>. If we engage with you on social media, we
+                may use information you share with us (including your social
+                media handle or profile) or which is available from your account
+                to inform our correspondence with you.
               </li>
               <li>
-                <strong>Information we receive from others</strong>. As well as
+                <b>Information we receive from others</b>. As well as
                 information that you give us directly, we may also collect
                 information about you from others. For instance, this might
                 happen if another user contact us about you.
               </li>
               <li>
-                <strong>Call information. </strong>We may also collect details
-                of phone numbers used to call our organisation and the date,
-                time and duration of any calls. Please note that if we record
-                your calls to or from us, we will inform you of this.
+                <b>Call information. </b>We may also collect details of phone
+                numbers used to call our organisation and the date, time and
+                duration of any calls. Please note that if we record your calls
+                to or from us, we will inform you of this.
               </li>
               <li>
-                <strong>Why we use this information. </strong>We will keep and
-                use that information to administer your account (if applicable),
-                to comply with any legal requirements for us to maintain certain
+                <b>Why we use this information. </b>We will keep and use that
+                information to administer your account (if applicable), to
+                comply with any legal requirements for us to maintain certain
                 records or carry out certain verifications, and/or for our
                 legitimate interests in preventing fraud, dealing with a
                 complaint or enquiry and administering services we offer, as
@@ -231,15 +232,15 @@ const PrivacyRoute = () => {
                 and survey purposes.
               </li>
               <li>
-                <strong>Where your information relates to an account</strong>,
-                it is kept for a period of up to seven (7) years after your
-                account is closed to enable us to deal with any enquiries or
-                claims and as required for tax purposes.
+                <b>Where your information relates to an account</b>, it is kept
+                for a period of up to seven (7) years after your account is
+                closed to enable us to deal with any enquiries or claims and as
+                required for tax purposes.
               </li>
               <li>
-                <strong>Payment information</strong> is collected by our payment
-                card processing provider and is retained by them in accordance
-                with their policies. For more information, please see their
+                <b>Payment information</b> is collected by our payment card
+                processing provider and is retained by them in accordance with
+                their policies. For more information, please see their
                 information available during the payment process.
               </li>
               <li>
@@ -256,11 +257,11 @@ const PrivacyRoute = () => {
             <h2>Why else do we use your information</h2>
             <ol className="list">
               <li>
-                <strong>Common uses of your information. </strong>We will only
-                use your personal information when the law allows us to do so.
-                We use optional information you upload to your account (and in
-                limited other circumstances) because you have consented to it.
-                We use your other information in the ways set out in this notice
+                <b>Common uses of your information. </b>We will only use your
+                personal information when the law allows us to do so. We use
+                optional information you upload to your account (and in limited
+                other circumstances) because you have consented to it. We use
+                your other information in the ways set out in this notice
                 because:
                 <ol className="list">
                   <li>
@@ -281,11 +282,11 @@ const PrivacyRoute = () => {
                 </ol>
               </li>
               <li>
-                <strong>Change of purpose. </strong>We will only use your
-                personal information for the purposes for which we collected it
-                as set out in this notice, unless we reasonably consider that we
-                need to use it for another reason and that reason is compatible
-                with the original purpose. If we need to use your personal
+                <b>Change of purpose. </b>We will only use your personal
+                information for the purposes for which we collected it as set
+                out in this notice, unless we reasonably consider that we need
+                to use it for another reason and that reason is compatible with
+                the original purpose. If we need to use your personal
                 information for an unrelated purpose, we will notify you and we
                 will explain the legal basis which allows us to do so.
               </li>
@@ -300,10 +301,10 @@ const PrivacyRoute = () => {
                 services which you might be interested in.
               </li>
               <li>
-                <strong>
+                <b>
                   You always have the right to "opt out" of receiving our
                   marketing
-                </strong>
+                </b>
                 . You can exercise the right at any time by contacting us. If we
                 send you any marketing emails, we will always provide an
                 unsubscribe option to allow you to opt out of any further
@@ -315,15 +316,15 @@ const PrivacyRoute = () => {
                 marketing.
               </li>
               <li>
-                <strong>For individuals. </strong>We will only send you
-                marketing emails or texts with your consent.
+                <b>For individuals. </b>We will only send you marketing emails
+                or texts with your consent.
               </li>
               <li>
-                <strong>For businesses. </strong>If you are a company or LLP (or
-                are acting in a professional capacity as part of one) we use
-                your contact details as necessary for our legitimate interests
-                in marketing to you (by various channels) and maintaining a list
-                of potential customers.
+                <b>For businesses. </b>If you are a company or LLP (or are
+                acting in a professional capacity as part of one) we use your
+                contact details as necessary for our legitimate interests in
+                marketing to you (by various channels) and maintaining a list of
+                potential customers.
               </li>
               <li>
                 We never share your name or contact details with third parties
@@ -333,10 +334,10 @@ const PrivacyRoute = () => {
                 treat the information confidentially and to keep it secure.
               </li>
               <li>
-                <strong>
+                <b>
                   We retain your details on our marketing list until you
                   "opt-out" at which point we add you to our suppression list
-                </strong>
+                </b>
                 . We keep that suppression list indefinitely to comply with our
                 legal obligations to ensure we don't accidentally send you any
                 more marketing.
@@ -355,10 +356,10 @@ const PrivacyRoute = () => {
             <h2>Website and app information</h2>
             <ol className="list">
               <li>
-                <strong>
+                <b>
                   We may collect information about you and your use of our
                   website and app
-                </strong>{" "}
+                </b>{" "}
                 via technical means such as cookies, webpage counters and other
                 analytics tools. This may include your IP address, login data,
                 browser type and version, time zone setting and location,
@@ -377,24 +378,24 @@ const PrivacyRoute = () => {
                 you.
               </li>
               <li>
-                <strong>Social Media integrations. </strong>We have Facebook and
-                Google login enabled. If you use this to login to your account,
+                <b>Social Media integrations. </b>We have Facebook, Google and
+                Apple login enabled. If you use this to login to your account,
                 or are logged in when visiting our site, or if you click a
-                &ldquo;share&rdquo; or &ldquo;like&rdquo; or equivalent social
-                media button, the relevant social media platform may be a joint
-                controller with us in relation to information that is sent to
-                them about you regarding your clicking of that button or your
-                use of that login functionality (which may include the types of
-                information which we collect about you as part of your visit to
-                our website or use of our app described above). Any information
-                sent to a Google or a social media platform is used by them
-                according to their privacy policies, and they will be solely
-                responsible for that use and primarily responsible for providing
-                you with information about any joint processing and enabling you
-                to exercise your rights under data protection law. For more
-                information on the responsibilities of Google or social media
-                platforms and us in relation to this functionality, please see
-                their privacy notices:
+                “share” or “like” or equivalent social media button, the
+                relevant social media platform may be a joint controller with us
+                in relation to information that is sent to them about you
+                regarding your clicking of that button or your use of that login
+                functionality (which may include the types of information which
+                we collect about you as part of your visit to our website or use
+                of our app described above). Any information sent to a Google or
+                a social media platform is used by them according to their
+                privacy policies, and they will be solely responsible for that
+                use and primarily responsible for providing you with information
+                about any joint processing and enabling you to exercise your
+                rights under data protection law. For more information on the
+                responsibilities of Google or social media platforms and us in
+                relation to this functionality, please see their privacy
+                notices:
                 <ol className="list">
                   <li>
                     Facebook:{" "}
@@ -408,6 +409,12 @@ const PrivacyRoute = () => {
                       {makeUrlPretty("https://policies.google.com/privacy")}
                     </Link>
                   </li>
+                  <li>
+                    Apple:{" "}
+                    <Link href="https://www.apple.com/legal/privacy">
+                      {makeUrlPretty("https://www.apple.com/legal/privacy")}
+                    </Link>
+                  </li>
                 </ol>
               </li>
               <li>
@@ -419,14 +426,14 @@ const PrivacyRoute = () => {
                 when it is collected or the relevant cookie expires.
               </li>
               <li>
-                <strong>Third party websites. </strong>Our website or app may,
-                from time to time, contain links to third party websites,
-                plug-ins and applications. Clicking on those links or enabling
-                those connections may allow third parties to collect or share
-                data about you. We do not control these third party websites and
-                are not responsible for their privacy statements. When you leave
-                our website or app, we encourage you to read the privacy notice
-                of every website you visit or app you use.
+                <b>Third party websites. </b>Our website or app may, from time
+                to time, contain links to third party websites, plug-ins and
+                applications. Clicking on those links or enabling those
+                connections may allow third parties to collect or share data
+                about you. We do not control these third party websites and are
+                not responsible for their privacy statements. When you leave our
+                website or app, we encourage you to read the privacy notice of
+                every website you visit or app you use.
               </li>
             </ol>
           </li>
@@ -587,18 +594,17 @@ const PrivacyRoute = () => {
             <h2>SHARING YOUR INFORMATION</h2>
             <ol className="list">
               <li>
-                <strong>We never sell your data to third parties. </strong>But
-                we may need to share your information with third parties,
-                including third-party service providers and other entities in
-                our group. Third parties are required to respect the security of
-                your personal information and to treat it in accordance with the
-                law.
+                <b>We never sell your data to third parties. </b>But we may need
+                to share your information with third parties, including
+                third-party service providers and other entities in our group.
+                Third parties are required to respect the security of your
+                personal information and to treat it in accordance with the law.
               </li>
               <li>
-                <strong>
+                <b>
                   Why might we share your personal information with third
                   parties?{" "}
-                </strong>
+                </b>
                 We may share your personal information with third parties if we
                 are under a duty to disclose or share your personal information
                 in order to comply with any legal obligation, or in order to
@@ -610,10 +616,10 @@ const PrivacyRoute = () => {
                 risk reduction.
               </li>
               <li>
-                <strong>
+                <b>
                   Which third-party service providers process your personal
                   information?{" "}
-                </strong>
+                </b>
                 We may need to share your personal information with third-party
                 service providers (including contractors and designated agents)
                 so that they can carry out their services. We may use
@@ -622,10 +628,10 @@ const PrivacyRoute = () => {
                 processing.
               </li>
               <li>
-                <strong>
+                <b>
                   When might we share your personal information with other
                   entities in the group?{" "}
-                </strong>
+                </b>
                 We may share your personal information with other entities in
                 our group as part of our regular reporting activities on company
                 performance, in the context of a business reorganisation or
@@ -633,10 +639,10 @@ const PrivacyRoute = () => {
                 and hosting of data.
               </li>
               <li>
-                <strong>
+                <b>
                   How secure is your information with third-party service
                   providers and other entities in our group?{" "}
-                </strong>
+                </b>
                 All our third-party service providers and other entities in the
                 group are required to take appropriate security measures to
                 protect your personal information. Where third parties process
@@ -646,12 +652,12 @@ const PrivacyRoute = () => {
                 secure.
               </li>
               <li>
-                <strong>What about other third parties? </strong>We may share
-                your personal information with other third parties, for example
-                with potential buyers and professional advisers in the context
-                of the possible sale or restructuring of the business where
-                necessary in connection with the purposes which your information
-                was collected for. We may also need to share your personal
+                <b>What about other third parties? </b>We may share your
+                personal information with other third parties, for example with
+                potential buyers and professional advisers in the context of the
+                possible sale or restructuring of the business where necessary
+                in connection with the purposes which your information was
+                collected for. We may also need to share your personal
                 information with a regulator or to otherwise comply with the
                 law.
               </li>
@@ -731,80 +737,79 @@ const PrivacyRoute = () => {
                 certain circumstances, by law you have the right to:
                 <ol className="list">
                   <li>
-                    <strong>Be informed</strong> in a clear, transparent and
-                    easily understandable way about how we use your personal
+                    <b>Be informed</b> in a clear, transparent and easily
+                    understandable way about how we use your personal
                     information and about your rights. This is why we are
                     providing you with the information in this notice. If you
                     require any further information about how we use your
                     personal information, please let us know.
                   </li>
                   <li>
-                    <strong>Request </strong>
-                    <strong>access </strong>to your personal information
-                    (commonly known as a "data subject access request"). This
-                    enables you to receive a copy of the personal information we
-                    hold about you and to check that we are lawfully processing
-                    it.
+                    <b>Request </b>
+                    <b>access </b>to your personal information (commonly known
+                    as a "data subject access request"). This enables you to
+                    receive a copy of the personal information we hold about you
+                    and to check that we are lawfully processing it.
                   </li>
                   <li>
-                    <strong>Request </strong>
-                    <strong>correction </strong>of the personal information that
-                    we hold about you. This enables you to have any incomplete
-                    or inaccurate information we hold about you corrected.
+                    <b>Request </b>
+                    <b>correction </b>of the personal information that we hold
+                    about you. This enables you to have any incomplete or
+                    inaccurate information we hold about you corrected.
                   </li>
                   <li>
-                    <strong>Request erasure </strong>of your personal
-                    information. This enables you to ask us to delete or remove
-                    personal information where there is no good reason for us
-                    continuing to process it (for instance, we may need to
-                    continue using your personal data to comply with our legal
-                    obligations). You also have the right to ask us to delete or
-                    remove your personal information where you have exercised
-                    your right to object to processing (see below).
+                    <b>Request erasure </b>of your personal information. This
+                    enables you to ask us to delete or remove personal
+                    information where there is no good reason for us continuing
+                    to process it (for instance, we may need to continue using
+                    your personal data to comply with our legal obligations).
+                    You also have the right to ask us to delete or remove your
+                    personal information where you have exercised your right to
+                    object to processing (see below).
                   </li>
                   <li>
-                    <strong>Object to processing </strong>of your personal
-                    information where we are relying on a legitimate interest
-                    (or those of a third party) and there is something about
-                    your particular situation which makes you want to object to
-                    us using your information on this basis and we do not have a
-                    compelling legitimate basis for doing so which overrides
-                    your rights, interests and freedoms (for instance, we may
-                    need it to defend a legal claim). You also have the right to
-                    object where we are processing your personal information for
-                    direct marketing purposes.
+                    <b>Object to processing </b>of your personal information
+                    where we are relying on a legitimate interest (or those of a
+                    third party) and there is something about your particular
+                    situation which makes you want to object to us using your
+                    information on this basis and we do not have a compelling
+                    legitimate basis for doing so which overrides your rights,
+                    interests and freedoms (for instance, we may need it to
+                    defend a legal claim). You also have the right to object
+                    where we are processing your personal information for direct
+                    marketing purposes.
                   </li>
                   <li>
-                    <strong>Request the restriction of processing </strong>of
-                    your personal information. This enables you to ask us to
-                    suspend the processing of personal information about you,
-                    for example if you want us to establish its accuracy or the
+                    <b>Request the restriction of processing </b>of your
+                    personal information. This enables you to ask us to suspend
+                    the processing of personal information about you, for
+                    example if you want us to establish its accuracy or the
                     reason for processing it.
                   </li>
                   <li>
-                    <strong>Request the transfer </strong>of your personal
-                    information to another party where you provided it to us and
-                    we are using it based on your consent, or to carry out a
-                    contract with you, and we process it using automated means.
+                    <b>Request the transfer </b>of your personal information to
+                    another party where you provided it to us and we are using
+                    it based on your consent, or to carry out a contract with
+                    you, and we process it using automated means.
                   </li>
                   <li>
-                    <strong>Withdraw consent.</strong> In the limited
-                    circumstances where we are relying on your consent (as
-                    opposed to the other bases set out above) to the collection,
-                    processing and transfer of your personal information for a
-                    specific purpose, you have the right to withdraw your
-                    consent for that specific processing at any time. Once we
-                    have received notification that you have withdrawn your
-                    consent, we will no longer process your information for the
-                    purpose or purposes you originally agreed to, unless we have
-                    another compelling legitimate interest in doing so.
+                    <b>Withdraw consent.</b> In the limited circumstances where
+                    we are relying on your consent (as opposed to the other
+                    bases set out above) to the collection, processing and
+                    transfer of your personal information for a specific
+                    purpose, you have the right to withdraw your consent for
+                    that specific processing at any time. Once we have received
+                    notification that you have withdrawn your consent, we will
+                    no longer process your information for the purpose or
+                    purposes you originally agreed to, unless we have another
+                    compelling legitimate interest in doing so.
                   </li>
                   <li>
-                    <strong>Lodge a complaint</strong>. If you think that we are
-                    using your information in a way which breaches data
-                    protection law, you have the right to lodge a complaint with
-                    your national data protection supervisory authority and you
-                    may also email{" "}
+                    <b>Lodge a complaint</b>. If you think that we are using
+                    your information in a way which breaches data protection
+                    law, you have the right to lodge a complaint with your
+                    national data protection supervisory authority and you may
+                    also email{" "}
                     <Link href={`mailto:complaints@${prettyUrl}`}>
                       complaints@{prettyUrl}
                     </Link>{" "}
@@ -821,24 +826,24 @@ const PrivacyRoute = () => {
                 </p>
               </li>
               <li>
-                <strong>No fee usually required. </strong>You will not have to
-                pay a fee to access your personal information (or to exercise
-                any of the other rights). However, we may charge a reasonable
-                fee if your request for access is clearly unfounded or
-                excessive. Alternatively, we may refuse to comply with the
-                request in such circumstances.
+                <b>No fee usually required. </b>You will not have to pay a fee
+                to access your personal information (or to exercise any of the
+                other rights). However, we may charge a reasonable fee if your
+                request for access is clearly unfounded or excessive.
+                Alternatively, we may refuse to comply with the request in such
+                circumstances.
               </li>
               <li>
-                <strong>What we may need from you. </strong>We may need to
-                request specific information from you to help us understand the
-                nature of your request, to confirm your identity and ensure your
-                right to access the information (or to exercise any of your
-                other rights). This is another appropriate security measure to
-                ensure that personal information is not disclosed to any person
-                who has no right to receive it. If we request any identification
-                from you for this purpose, it is on the basis that it is
-                necessary to comply with our legal obligations, and we will only
-                keep and use this until your identity has been verified.
+                <b>What we may need from you. </b>We may need to request
+                specific information from you to help us understand the nature
+                of your request, to confirm your identity and ensure your right
+                to access the information (or to exercise any of your other
+                rights). This is another appropriate security measure to ensure
+                that personal information is not disclosed to any person who has
+                no right to receive it. If we request any identification from
+                you for this purpose, it is on the basis that it is necessary to
+                comply with our legal obligations, and we will only keep and use
+                this until your identity has been verified.
               </li>
               <li>
                 Please consider your request responsibly before submitting it.
