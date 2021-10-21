@@ -17,6 +17,7 @@ import dots from "../../assets/icon/dots";
 import dotsVertical from "../../assets/icon/dotsvertical";
 import drink from "../../assets/icon/drink";
 import eye from "../../assets/icon/eye";
+import facebook from "../../assets/icon/facebook";
 import favorite from "../../assets/icon/notifications";
 import filter from "../../assets/icon/filter";
 import friends from "../../assets/icon/friends";
@@ -51,6 +52,7 @@ import politics from "../../assets/icon/politics";
 import playStore from "../../assets/icon/playStore";
 import religion from "../../assets/icon/religion";
 import search from "../../assets/icon/search";
+import tiktok from "../../assets/icon/tiktok";
 import profession from "../../assets/icon/profession";
 
 import "./Icon.scss";
@@ -75,6 +77,7 @@ const icons: any = {
   "dots-vertical": dotsVertical,
   drink,
   eye,
+  facebook,
   favorite,
   filter,
   friends,
@@ -102,6 +105,7 @@ const icons: any = {
   religion,
   reset,
   search,
+  tiktok,
   send,
   share,
   smile,

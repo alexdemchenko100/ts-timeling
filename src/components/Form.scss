@@ -2,7 +2,12 @@ section.form {
   color: var(--color-white);
   background-color: #1d1d1f;
   text-align: center;
-  padding: 200px 32px 180px;
+  padding: 128px 32px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
 
   .button {
     margin-top: 50px;

@@ -2,6 +2,7 @@ import Columns from "../components/Columns";
 import Header from "../components/Header";
 import Form from "../components/Form";
 import { FormattedMessage } from "react-intl";
+import RouteContainer from "../ui/RouteContainer";
 
 const Home = () => {
   const onClickNotify = () => {
@@ -9,8 +10,16 @@ const Home = () => {
 
     target?.scrollIntoView({ behavior: "smooth" });
   };
+
+  const routeTitle = "Timeling";
+  const routeDescription = "";
+
   return (
-    <>
+    <RouteContainer
+      title={routeTitle}
+      description={routeDescription}
+      name="home"
+    >
       <Header>
         <button className="button big" onClick={onClickNotify}>
           <FormattedMessage id="notify_me" />
@@ -55,7 +64,7 @@ const Home = () => {
         </p>
       </Columns>
       <Form />
-    </>
+    </RouteContainer>
   );
 };
 

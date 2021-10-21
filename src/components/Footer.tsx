@@ -3,11 +3,12 @@ import Logo from "./Logo";
 import "./Footer.scss";
 import { FormattedMessage } from "react-intl";
 import Link from "./global/Link";
+import Icon from "./global/Icon";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="top">
+      <div className="top content-width">
         <Logo />
         <div className="links">
           <Link href="/terms">
@@ -21,25 +22,17 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="bottom">
-        <p>© 2021 Timeling Inc.</p>
+      <div className="bottom content-width">
+        <p>© {new Date().getFullYear()} Timeling Inc.</p>
         <div className="socials">
           <Link href="https://www.facebook.com/timelingapp">
-            <img
-              src="/assets/logo/facebook.svg"
-              loading="lazy"
-              alt="Facebook"
-            />
+            <Icon id="facebook" />
           </Link>
-          <Link href="https://twitter.com">
-            <img src="/assets/logo/twitter.svg" loading="lazy" alt="Twitter" />
+          <Link href="https://tiktok.com">
+            <Icon id="tiktok" />
           </Link>
           <Link href="https://www.instagram.com/timelingapp">
-            <img
-              src="/assets/logo/instagram.svg"
-              loading="lazy"
-              alt="Instagram"
-            />
+            <Icon id="instagram" />
           </Link>
         </div>
       </div>

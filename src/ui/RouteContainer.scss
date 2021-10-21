@@ -1,7 +1,11 @@
 .route-container {
+  opacity: 0;
+  animation: fade-in 1s ease-out 0.1s;
+  animation-fill-mode: forwards;
+
   > .route {
     > .content {
-      padding: 40px;
+      padding: 32px;
     }
   }
 }

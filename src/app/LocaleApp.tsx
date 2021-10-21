@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useMemo, useState } from "react";
 import { IntlProvider } from "react-intl";
-import AppLoader from "./AppLoader";
 import {
   clientDefaultLanguage,
   getCurrent,
@@ -15,8 +14,6 @@ const LocaleApp = ({ children }: any) => {
 
   const localeIso = useMemo(() => {
     const current = getCurrent();
-
-    console.log(current);
 
     if (!current) {
       window.location.href = urlWithLocale(
@@ -38,7 +35,7 @@ const LocaleApp = ({ children }: any) => {
       .catch((err: any) => console.error("Strings error: " + err));
   }, [localeIso]);
 
-  if (!strings || !localeIso) return <AppLoader withIntl={false}></AppLoader>;
+  if (!strings || !localeIso) return null; // return <AppLoader withIntl={false}></AppLoader>;
 
   return (
     <IntlProvider
