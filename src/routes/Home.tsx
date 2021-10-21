@@ -19,7 +19,9 @@ const Home = () => {
       <Columns
         className="content-width"
         videoUrl={"/assets/scrolldates.mp4"}
-        title={<FormattedMessage id="scroll_dates_title" />}
+        title={
+          <FormattedMessage id="scroll_dates_title" values={{ 0: <br /> }} />
+        }
       >
         <p className="mobile">
           <FormattedMessage id="scroll_dates_content_short" />

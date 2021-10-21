@@ -10,7 +10,7 @@ const strings = {
   notify_me: "Notify me",
   lets_meet_up: "Let's meet up",
   other: "Other",
-  scroll_dates_title: "Scroll dates, not profiles",
+  scroll_dates_title: "Scroll dates,{0}not profiles",
   scroll_dates_content_short:
     "Timeling is a meet-up app that lets you set and go on dates. Say goodbye to endless chatting, clashing expectations or ghosting – and start meeting new people, friends and maybe even the love of your life.",
   scroll_dates_content_long:
