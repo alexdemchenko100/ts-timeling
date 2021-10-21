@@ -5,8 +5,11 @@ import "./Consent.scss";
 
 const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
 
+(window as any).fbq("consent", "grant");
+
+//Apparently we dont need this
 const Consent = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(!getHasConsent());
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const onHandleDecline = () => {
     window.localStorage.setItem("cookiesConsent", "false");
