@@ -3,7 +3,7 @@ import Modal from "./Modal";
 
 import "./Consent.scss";
 
-const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
+// const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
 
 (window as any).fbq("consent", "grant");
 
