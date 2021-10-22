@@ -566,7 +566,7 @@ const PrivacyRoute = () => {
             </p>
           </li>
           <li>
-            <h2>AUTOMATED DECISION MAKING</h2>
+            <h2>Automated decision making</h2>
             <p>
               We use an automated matching logic to match you with the kind of
               people you should see, and the kind of people that should see you.
@@ -591,7 +591,7 @@ const PrivacyRoute = () => {
             </ol>
           </li>
           <li>
-            <h2>SHARING YOUR INFORMATION</h2>
+            <h2>Sharing your information</h2>
             <ol className="list">
               <li>
                 <b>We never sell your data to third parties. </b>But we may need
@@ -664,7 +664,7 @@ const PrivacyRoute = () => {
             </ol>
           </li>
           <li>
-            <h2>WHERE WE STORE YOUR INFORMATION</h2>
+            <h2>Where do we store your information</h2>
             <ol className="list">
               <li>
                 Our offices are based in England and our main data centre is
@@ -680,7 +680,7 @@ const PrivacyRoute = () => {
             </ol>
           </li>
           <li>
-            <h2>DATA SECURITY</h2>
+            <h2>Data security</h2>
             <ol className="list">
               <li>
                 As well as the measures set out above in relation to sharing of
@@ -701,7 +701,7 @@ const PrivacyRoute = () => {
             </ol>
           </li>
           <li>
-            <h2>HOW LONG WILL WE KEEP YOUR INFORMATION FOR?</h2>
+            <h2>How long will we keep your information for?</h2>
             <ol className="list">
               <li>
                 We have set out above indications of how long we generally keep
