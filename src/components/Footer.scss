@@ -29,6 +29,7 @@ footer {
       }
 
       > a {
+        text-decoration: none;
         margin-left: var(--spacing);
         @media all and (max-width: $mobile-max) {
           margin-top: var(--spacing-lg);

@@ -69,10 +69,6 @@ table {
   --color: #111;
 }
 
-:focus {
-  outline: none;
-}
-
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -115,21 +111,53 @@ svg {
   fill: currentColor;
 }
 
-select,
-button,
-input,
-textarea {
-  text-align: inherit;
-  color: inherit;
-  font: inherit;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
+::selection {
+  background-color: var(--color-peach);
+  color: var(--background-color);
 }
 
-option {
-  color: initial;
+ul.list,
+ol.list {
+  list-style: revert;
+  padding-left: var(--spacing-md);
+  margin-top: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+ol.list {
+  counter-reset: item;
+  position: relative;
+
+  ol.list {
+    position: static;
+  }
+  li {
+    display: block;
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+  }
+  li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item;
+    position: absolute;
+    left: 0;
+  }
+
+  &.big {
+    padding-left: var(--spacing-lg);
+    > li:before {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+}
+
+:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: underline;
 }
 
 strong,
@@ -154,8 +182,20 @@ h1 {
   }
   &.big {
     font-size: 64px;
+    font-weight: 700;
     @media all and (max-width: $mobile-max) {
       font-size: 46px;
+    }
+  }
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  &.big {
+    font-size: 48px;
+    @media all and (max-width: $mobile-max) {
+      font-size: 36px;
     }
   }
 }

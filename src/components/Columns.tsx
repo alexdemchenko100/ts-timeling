@@ -24,7 +24,7 @@ const Columns = ({ videoUrl, title, children, className }: Props) => {
         src={videoUrl}
       />
       <div>
-        <h1 className="heading">{title}</h1>
+        <h2 className="big">{title}</h2>
         {children}
       </div>
     </section>

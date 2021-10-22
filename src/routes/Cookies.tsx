@@ -19,7 +19,7 @@ const CookiesRoute = () => {
     >
       <div className="content">
         <h1>{routeTitle}</h1>
-        <h3>General</h3>
+        <h2>General</h2>
         <p>
           We use cookies to help improve your experience of {withBaseURL()} and
           other connected domains. This cookie policy is part of {COMPANY_NAME}
@@ -28,7 +28,7 @@ const CookiesRoute = () => {
           services we may use, who may also use cookies as part of their
           service, though they are not covered by our policy.
         </p>
-        <h3>What is a cookie?</h3>
+        <h2>What is a cookie?</h2>
         <p>
           A cookie is a small piece of data that a website stores on your device
           when you visit, typically containing information about the website
@@ -49,7 +49,7 @@ const CookiesRoute = () => {
           third parties) are called "third-party cookies", and can be used to
           track you on other websites that use the same third-party service.
         </p>
-        <h3>Types of cookies and how we use them</h3>
+        <h2>Types of cookies and how we use them</h2>
         <h4>Essential cookies</h4>
         <p>
           Essential cookies are crucial to your experience of a website,

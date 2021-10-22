@@ -4,12 +4,15 @@ import "./Footer.scss";
 import { FormattedMessage } from "react-intl";
 import Link from "./global/Link";
 import Icon from "./global/Icon";
+import { COMPANY_NAME } from "../lib/config";
 
 const Footer = () => {
   return (
     <footer>
       <div className="top content-width">
-        <Logo />
+        <Link className="logo" href="/">
+          <Logo />
+        </Link>
         <div className="links">
           <Link href="/terms">
             <FormattedMessage id="terms_of_service" />
@@ -23,7 +26,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="bottom content-width">
-        <p>© {new Date().getFullYear()} Timeling Inc.</p>
+        <p>
+          © {new Date().getFullYear()} {COMPANY_NAME}
+        </p>
         <div className="socials">
           <Link href="https://www.facebook.com/timelingapp">
             <Icon id="facebook" />

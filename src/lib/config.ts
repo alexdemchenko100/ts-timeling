@@ -1,8 +1,8 @@
 export const NAME: string = "Timeling";
 export const COMPANY_ID = `13325162`;
-export const COMPANY_NAME = `${NAME} LTD`;
+export const COMPANY_NAME = `${NAME} Limited`;
 export const COMPANY_ADDRESS = `2nd Floor College House, 17 King Edwards Road`;
-export const COMPANY_POSTCODE = `LONDON, LXD 234`;
+export const COMPANY_POSTCODE = `London, HA4 7AE`;
 export const COMPANY_COUNTRY = `United Kingdom`;
 export const COMPANY_DATA_PROTECTOR = `Sean Kafashian`;
 

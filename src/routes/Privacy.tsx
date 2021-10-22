@@ -21,7 +21,7 @@ const getDomain = (url: string) => {
     .replace("http://", "")
     .replace("https://", "");
 
-  if ((newUrl.match(/./g) || []).length > 2) {
+  if ((newUrl.match(/\./g) || []).length > 2) {
     return newUrl.substring(newUrl.indexOf(".") + 1);
   }
 
@@ -86,8 +86,8 @@ const PrivacyRoute = () => {
             <ol className="list">
               <li>
                 We are {COMPANY_NAME}. Our registered office is at{" "}
-                {COMPANY_ADDRESS}, {COMPANY_POSTCODE} and our registered company
-                number is {COMPANY_ID}.
+                {COMPANY_ADDRESS}, {COMPANY_POSTCODE} {COMPANY_COUNTRY} and our
+                registered company number is {COMPANY_ID}.
               </li>
               <li>
                 We also have a group company (Timeling Services Limited) which

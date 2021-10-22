@@ -1,4 +1,5 @@
 import { FormattedDate, useIntl } from "react-intl";
+import Link from "../components/global/Link";
 import { COMPANY_NAME } from "../lib/config";
 import RouteContainer from "../ui/RouteContainer";
 
@@ -119,18 +120,19 @@ const TermsRoute = () => {
           <li>
             Use of the Website is also governed by our Privacy Policy, which is
             incorporated into these terms and conditions by this reference. To
-            view the Privacy Policy, please click here:
+            view the Privacy Policy, please click here:{" "}
+            <Link href="/privacy">Privacy Policy</Link>
           </li>
           <li>
             Any online facilities, tools, services or information that{" "}
-            {COMPANY_NAME}
-            makes available through the Website (the Service) is provided "as
-            is" and on an "as available" basis. We give no warranty that the
-            Service will be free of defects and/or faults. To the maximum extent
-            permitted by the law, we provide no warranties (express or implied)
-            of fitness for a particular purpose, accuracy of information,
-            compatibility and satisfactory quality. &nbsp;{COMPANY_NAME} is
-            under no obligation to update information on the Website.
+            {COMPANY_NAME} makes available through the Website (the Service) is
+            provided "as is" and on an "as available" basis. We give no warranty
+            that the Service will be free of defects and/or faults. To the
+            maximum extent permitted by the law, we provide no warranties
+            (express or implied) of fitness for a particular purpose, accuracy
+            of information, compatibility and satisfactory quality. &nbsp;
+            {COMPANY_NAME} is under no obligation to update information on the
+            Website.
           </li>
           <li>
             Whilst {COMPANY_NAME} uses reasonable endeavours to ensure that the

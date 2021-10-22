@@ -53,11 +53,11 @@ const Form = () => {
   };
   return (
     <section className="form">
-      <h1 id="FormHeading">
+      <h2 className="big" id="FormHeading">
         <FormattedMessage id="a_dating_app_for_dates" />
         <br />
         <FormattedMessage id="its_about_time" />
-      </h1>
+      </h2>
       {status !== "success" && (
         <form onSubmit={onSubmit}>
           <div className="row">
