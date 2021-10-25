@@ -1,12 +1,12 @@
 {
   "short_name": "Timeling",
   "name": "Timeling",
-  "description": "No timewasting. Just dating.",
-  "start_url": ".",
+  "description": "Meet Timeling. Your calendar-based dating app for real life connections.",
+  "start_url": "/?utm_source=app",
   "scope": ".",
   "display": "standalone",
-  "theme_color": "#ffaf8d",
-  "background_color": "#ffaf8d",
+  "theme_color": "#f8f8fe",
+  "background_color": "#f8f8fe",
   "orientation": "portrait-primary",
   "iarc_rating_id": "02f31b12-781b-4059-82b8-0239402ffe74",
   "icons": [
@@ -65,5 +65,54 @@
       "purpose": "maskable any"
     }
   ],
-  "categories": ["social"]
+  "categories": ["social"],
+  "screenshots": [
+    {
+      "src": "screenshots/1small.png",
+      "sizes": "1284x2778",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/1big.png",
+      "sizes": "2048x2732",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/2small.png",
+      "sizes": "1284x2778",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/2big.png",
+      "sizes": "2048x2732",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/3small.png",
+      "sizes": "1284x2778",
+      "type": "image/png"
+    },
+    {
+      "src": "screenshots/3big.png",
+      "sizes": "2048x2732",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://app.timeling.com/manifest.webmanifest"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.timeling.android",
+      "id": "com.timeling.android"
+    },
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/store/productId/9P17JG9XF7VB",
+      "id": "9P17JG9XF7VB"
+    }
+  ]
 }
