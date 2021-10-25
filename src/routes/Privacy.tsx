@@ -3,7 +3,6 @@ import Link from "../components/global/Link";
 import {
   COMPANY_ADDRESS,
   COMPANY_COUNTRY,
-  COMPANY_DATA_PROTECTOR,
   COMPANY_POSTCODE,
   COMPANY_NAME,
   withBaseURL,
