@@ -882,8 +882,6 @@ const PrivacyRoute = () => {
         <address>
           <strong>Data Protection Officer</strong>
           <br />
-          {COMPANY_DATA_PROTECTOR}
-          <br />
           {COMPANY_NAME}
           <br />
           {COMPANY_ADDRESS}
