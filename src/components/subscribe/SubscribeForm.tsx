@@ -1,15 +1,17 @@
 import classNames from "classnames";
 import { useState } from "react";
 import { FormattedMessage } from "react-intl";
-import "./Form.scss";
 
-type SignupModel = {
+import "./SubscribeForm.scss";
+
+type SubscribeModel = {
   name: string;
-  email: string;
+  type: number;
+  content: string;
   sex: string;
 };
 
-const Form = () => {
+const SubscribeForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<"success" | "error" | undefined>(
     undefined
@@ -24,16 +26,17 @@ const Form = () => {
 
     setIsLoading(true);
 
-    const data: SignupModel = {
+    const data: SubscribeModel = {
       name: elem.firstnamelastname.value,
-      email: elem.email.value,
+      type: 1, //email
+      content: elem.email.value,
       sex: elem.sex.value,
     };
 
     try {
       setStatus("success");
 
-      await fetch("https://app.timeling.com/api/misc/signup", {
+      await fetch("https://app.timeling.com/api/misc/subscribe", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -52,7 +55,7 @@ const Form = () => {
     setIsLoading(false);
   };
   return (
-    <section className="form">
+    <section className="subscribe-form">
       <h2 className="big" id="FormHeading">
         <FormattedMessage id="a_dating_app_for_dates" />
         <br />
@@ -131,4 +134,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default SubscribeForm;
