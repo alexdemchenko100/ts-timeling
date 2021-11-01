@@ -31,6 +31,8 @@ const strings = {
   thank_you_submission_recieved:
     "Thank you! Your submission has been received!",
   something_went_wrong: "Something went wrong 😢",
+  unsubscribe: "Unsubscribe",
+  _has_been_unsubscribed: "{0} has been unsubscribed",
   we_value_your_privacy: "We value your privacy",
 };
 

@@ -36,7 +36,7 @@ const Footer = () => {
           <Link href="https://tiktok.com">
             <Icon id="tiktok" />
           </Link>
-          <Link href="https://www.instagram.com/timelingapp">
+          <Link href="https://www.instagram.com/timeling.app">
             <Icon id="instagram" />
           </Link>
         </div>

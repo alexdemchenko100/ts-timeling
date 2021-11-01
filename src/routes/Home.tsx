@@ -1,6 +1,6 @@
 import Columns from "../components/Columns";
 import Header from "../components/Header";
-import Form from "../components/Form";
+import SubscribeForm from "../components/subscribe/SubscribeForm";
 import { FormattedMessage } from "react-intl";
 import RouteContainer from "../ui/RouteContainer";
 
@@ -63,7 +63,7 @@ const Home = () => {
           <FormattedMessage id="ladies_first_content_long" />
         </p>
       </Columns>
-      <Form />
+      <SubscribeForm />
     </RouteContainer>
   );
 };
