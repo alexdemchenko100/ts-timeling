@@ -113,7 +113,7 @@ const SubscribeForm = () => {
             className={classNames("button big primary", { loading: isLoading })}
             disabled={isLoading}
           >
-            <FormattedMessage id="lets_meet_up" />
+            <FormattedMessage id="join_now" />
           </button>
           <strong>
             <FormattedMessage id="we_value_your_privacy" />
