@@ -18,7 +18,7 @@ const Routes = (props: any) => {
   return (
     <Suspense
       fallback={
-        <main className="route-container">
+        <main className="route-container loading">
           <div className="content route" />
         </main>
       }
