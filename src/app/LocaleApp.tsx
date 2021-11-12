@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { IntlProvider } from "react-intl";
 import { clientDefaultLanguage, getCurrent, loadStrings } from "../lib/locale";
 
@@ -7,13 +7,11 @@ const LocaleApp = ({ children }: any) => {
 
   const [strings, setStrings] = useState<object | undefined>(undefined);
 
-  const localeIso = useMemo(() => {
-    const value = getCurrent() || clientDefaultLanguage;
+  const localeIso = useMemo(() => getCurrent() || clientDefaultLanguage, []);
 
-    document.documentElement.lang = value;
-
-    return value;
-  }, []);
+  useLayoutEffect(() => {
+    document.documentElement.lang = localeIso;
+  }, [localeIso]);
 
   useEffect(() => {
     if (!localeIso) return;
