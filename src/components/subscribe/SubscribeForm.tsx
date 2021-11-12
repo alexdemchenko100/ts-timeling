@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useState } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 import "./SubscribeForm.scss";
 
@@ -12,6 +12,8 @@ type SubscribeModel = {
 };
 
 const SubscribeForm = () => {
+  const intl = useIntl();
+
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState<"success" | "error" | undefined>(
     undefined
@@ -71,7 +73,7 @@ const SubscribeForm = () => {
               type="text"
               maxLength={256}
               name="firstnamelastname"
-              placeholder="Name"
+              placeholder={intl.formatMessage({ id: "name" })}
               required
               id="Name"
             />
@@ -84,7 +86,7 @@ const SubscribeForm = () => {
               type="email"
               maxLength={256}
               name="email"
-              placeholder="Email"
+              placeholder={intl.formatMessage({ id: "email" })}
               required
               id="Email"
             />
