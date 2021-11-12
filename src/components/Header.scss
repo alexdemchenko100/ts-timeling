@@ -31,4 +31,15 @@ header {
   .button {
     margin-top: var(--spacing-sm);
   }
+
+  .language {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 0.8rem;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
