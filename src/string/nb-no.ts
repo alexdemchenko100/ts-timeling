@@ -9,11 +9,11 @@ const strings = {
   male: "Mann",
   name: "Navn",
   its_about_time: "Tiden er inne.",
-  notify_me: "Legg deg til på vår venteliste",
+  notify_me: "Varsle meg",
   lets_meet_up: "La oss møtes",
   other: "Annen",
   join_now: "Bli med!",
-  join_the_waitlist: "Legg deg til på vår venteliste",
+  join_the_waitlist: "Bli med på venteliste",
   scroll_dates_title: "Scroll dates, ikke profiler",
   scroll_dates_content_short:
     "Timeling er en kalender-basert dating-app som lar deg planlegge og gå på dates. Dette sparer deg tid og gjør at du ikke lager forventinger og blir skuffet. Det hjelper deg å bygge nettverk, møte nye menneskjer og kanskje til og med din livspartner. Så begynn å date og så slutt å swipe!",
