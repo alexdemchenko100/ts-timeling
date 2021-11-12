@@ -10,7 +10,7 @@ const Cookies = lazy(() => import("./Cookies"));
 const Home = lazy(() => import("./Home"));
 const Unsubscribe = lazy(() => import("./Unsubscribe"));
 
-const languageRegex = `(${languages.join("|")})`;
+const languageRegex = `(${languages.join("|")})?`;
 
 const Routes = (props: any) => {
   const location = useLocation();
