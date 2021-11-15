@@ -20,7 +20,7 @@ const Header = ({ children }: any) => {
             <a href={urlWithLocale(window.location.href, "en-GB")}>English</a>
           )}
           {localeIso === "en-GB" && (
-            <a href={urlWithLocale(window.location.href, "nb-NO")}>Norweigan</a>
+            <a href={urlWithLocale(window.location.href, "nb-NO")}>Norwegian</a>
           )}
         </div>
         <Logo />
