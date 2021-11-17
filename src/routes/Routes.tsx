@@ -10,7 +10,7 @@ const Cookies = lazy(() => import("./Cookies"));
 const Home = lazy(() => import("./Home"));
 const Unsubscribe = lazy(() => import("./Unsubscribe"));
 
-const languageRegex = `(${languages.join("|")})`;
+const languageRegex = `(${languages.join("|")})?`;
 
 const Routes = (props: any) => {
   const location = useLocation();
@@ -18,7 +18,7 @@ const Routes = (props: any) => {
   return (
     <Suspense
       fallback={
-        <main className="route-container">
+        <main className="route-container loading">
           <div className="content route" />
         </main>
       }

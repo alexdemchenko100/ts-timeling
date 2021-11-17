@@ -1,31 +1,17 @@
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment, useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { IntlProvider } from "react-intl";
-import {
-  clientDefaultLanguage,
-  getCurrent,
-  loadStrings,
-  urlWithLocale,
-} from "../lib/locale";
+import { clientDefaultLanguage, getCurrent, loadStrings } from "../lib/locale";
 
 const LocaleApp = ({ children }: any) => {
   // const deviceDebug = useAppSelector(state => state.device.isDebug);
 
   const [strings, setStrings] = useState<object | undefined>(undefined);
 
-  const localeIso = useMemo(() => {
-    const current = getCurrent();
+  const localeIso = useMemo(() => getCurrent() || clientDefaultLanguage, []);
 
-    if (!current) {
-      window.location.href = urlWithLocale(
-        window.location.href,
-        clientDefaultLanguage
-      );
-
-      return null;
-    }
-
-    return current!;
-  }, []);
+  useLayoutEffect(() => {
+    document.documentElement.lang = localeIso;
+  }, [localeIso]);
 
   useEffect(() => {
     if (!localeIso) return;

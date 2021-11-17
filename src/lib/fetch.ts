@@ -1,6 +1,9 @@
 import qs from "qs";
 import { withBaseURLApi, withBaseURL } from "./config";
-import { getCurrent as getCurrentLanguage } from "./locale";
+import {
+  clientDefaultLanguage,
+  getCurrent as getCurrentLanguage,
+} from "./locale";
 import { parseJSONValues } from "./parseJSON";
 
 interface ExtendedRequestInit extends RequestInit {
@@ -81,7 +84,7 @@ export const basicFetchApi = async (
   method: string = "get",
   options: ExtendedRequestInit = {}
 ) => {
-  const language = getCurrentLanguage();
+  const language = getCurrentLanguage() || clientDefaultLanguage;
   if (language) {
     const languageShort = language.split("-")[0];
     options = {

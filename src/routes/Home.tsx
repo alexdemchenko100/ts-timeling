@@ -22,7 +22,7 @@ const Home = () => {
     >
       <Header>
         <button className="button big" onClick={onClickNotify}>
-          <FormattedMessage id="notify_me" />
+          <FormattedMessage id="join_the_waitlist" />
         </button>
       </Header>
       <Columns

@@ -60,7 +60,7 @@ table {
 
 :root {
   --color-white: #ffffff;
-  --color-black: #111;
+  --color-black: #000;
 }
 
 :root {
@@ -80,6 +80,10 @@ table {
   100% {
     opacity: 1;
   }
+}
+
+:root {
+  color-scheme: light dark;
 }
 
 html {
@@ -301,7 +305,10 @@ main {
   opacity: 0;
   animation: fade-in 1s ease-out 1s;
   animation-fill-mode: forwards;
-  background-color: var(--background-color);
+
+  &:not(.loading) {
+    background-color: var(--background-color);
+  }
 }
 
 .content-width {
@@ -318,5 +325,6 @@ main {
 
   > .route-container {
     flex-grow: 1;
+    min-height: 100%;
   }
 }

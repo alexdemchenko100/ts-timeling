@@ -4,6 +4,7 @@ export type ImportObject = {
 
 const stringImports: ImportObject = {
   "en-GB": () => import("../string/en-gb"),
+  "nb-NO": () => import("../string/nb-no"),
   // "en-US": () => import("../string/en-us"),
   // "sv-SE": () => import("../string/sv-se"),
 };

@@ -1,15 +1,19 @@
 const strings = {
   a_dating_app_for_dates: "A dating app for dates?",
   cookies: "Cookies",
+  email: "Email",
   female: "Female",
   headline: "We have a date for you.",
   headline_sub:
     "Meet Timeling. Your calendar-based dating app for real life connections.",
   male: "Male",
+  name: "Name",
   its_about_time: "It's about time.",
   notify_me: "Notify me",
   lets_meet_up: "Let's meet up",
   other: "Other",
+  join_now: "Join now",
+  join_the_waitlist: "Join waitlist",
   scroll_dates_title: "Scroll dates,{0}not profiles",
   scroll_dates_content_short:
     "Timeling is a meet-up app that lets you set and go on dates. Say goodbye to endless chatting, clashing expectations or ghosting – and start meeting new people, friends and maybe even the love of your life.",

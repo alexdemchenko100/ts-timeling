@@ -30,13 +30,13 @@ const Footer = () => {
           © {new Date().getFullYear()} {COMPANY_NAME}
         </p>
         <div className="socials">
-          <Link href="https://www.facebook.com/timelingapp">
+          <Link href="https://facebook.com/timelingapp">
             <Icon id="facebook" />
           </Link>
-          <Link href="https://tiktok.com">
+          <Link href="https://tiktok.com/@timeling.app">
             <Icon id="tiktok" />
           </Link>
-          <Link href="https://www.instagram.com/timeling.app">
+          <Link href="https://instagram.com/timeling.app">
             <Icon id="instagram" />
           </Link>
         </div>
