@@ -20,6 +20,8 @@ const SubscribeForm = () => {
   const onSubmit = async (e: any) => {
     e.preventDefault();
 
+    (window as any).gtag_report_conversion("#success");
+
     const elem: HTMLFormElement | undefined = e.currentTarget;
 
     if (!elem?.checkValidity()) return;

@@ -46,8 +46,8 @@
 
     <!-- Global site tag (gtag.js) - Google Ads: 10785514455 -->
     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-10785514455"
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=UA-209671318-1"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -55,7 +55,23 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
+      gtag("config", "UA-209671318-1", { anonymize_ip: true });
       gtag("config", "AW-10785514455", { anonymize_ip: true });
+    </script>
+    <!-- Event snippet for Subscribe Website Custom conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-10785514455/S5XjCLO60P8CENfH95Yo",
+          event_callback: callback,
+        });
+        return false;
+      }
     </script>
     <!-- Facebook pixel -->
     <script>
