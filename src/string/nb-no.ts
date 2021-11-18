@@ -9,7 +9,7 @@ const strings = {
   dont_miss_out: "Ikke gå glipp av dette!",
   headline_sub: "Din kalenderbaserte datingapp for møter i virkeligheten.",
   headline_sub2:
-    "Meld deg på for sjansen til å bli med på vår lanseringsfest. ",
+    "Meld deg på og få en eksklusiv mulighet til å vinne en billett til lanseringsfesten vår på Sawan i Oslo.",
   headline_sub2_short:
     "Meld deg på og få sjansen til å bli med på lanseringsfesten vår.",
   follow_us: "Følg oss!",
@@ -40,12 +40,12 @@ const strings = {
   time_we_met_content_short:
     "Nettdating på Timeling-måten: Bare lag en date, se hvem som liker den og velg en match. Så enkelt!",
   time_we_met_content_long:
-    "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å sjekke nærmere, bekrefte og møtes. Ikke mer bortkastet tid, ikke mer frustrasjon. Det er rett og slett en datingapp med en tidsfrist, for å si det slik.",
+    "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å sjekke nærmere, bekrefte og møtes. Ikke mer bortkastet tid, ikke mer frustrasjon. Det er rett og slett en datingapp med en tidsfrist.",
   ladies_first_title: "Damene først",
   ladies_first_content_short:
     "Vi har utviklet et system som fjerner eklinger og de som kaster bort tid. Vår brukerrangering filtrer for autentisitet og ærlighet.",
   ladies_first_content_long:
-    "Hvem styrer verden? Nettopp. Derfor har vi utviklet et system som eliminerer eklinger, falske profiler, ghostere og folk som ikke dukker opp. Vår brukerrangering filtrerer ut disse og henter frem de autentiske og ærlige – og algoritmen vår sørger for at de du møter er en god match. ",
+    "Hvem styrer verden? Nettopp. Derfor har vi utviklet et system som eliminerer falske profiler, ghostere og folk med uønsket adferd. Vårt system filtrerer disse ut og henter frem de autentiske og ærlige – og algoritmen vår sørger for at de du møter er en god match.",
   "404_status": "Ikke funnet",
   thank_you_submission_recieved:
     "Takk skal du ha! Innsendingen din er mottatt!",
