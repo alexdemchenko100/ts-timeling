@@ -78,7 +78,7 @@ const Home = () => {
       <Columns
         className="content-width"
         videoUrl={"/assets/scrolldates.mp4"}
-        url={"/assets/scrolldates.png"}
+        url={"/assets/scrolldates.jpg"}
         title={
           <FormattedMessage id="scroll_dates_title" values={{ 0: <br /> }} />
         }
@@ -93,7 +93,7 @@ const Home = () => {
       <Columns
         className="content-width reverse-desktop"
         videoUrl={"/assets/timewemet.mp4"}
-        url={"/assets/timewemet.png"}
+        url={"/assets/timewemet.jpg"}
         title={<FormattedMessage id="time_we_met_title" />}
       >
         <p className="mobile">
@@ -106,7 +106,7 @@ const Home = () => {
       <Columns
         className="content-width last"
         videoUrl={"/assets/ladiesfirst.mp4"}
-        url={"/assets/ladiesfirst.png"}
+        url={"/assets/ladiesfirst.jpg"}
         title={<FormattedMessage id="ladies_first_title" />}
       >
         <p className="mobile">

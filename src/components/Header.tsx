@@ -63,7 +63,7 @@ const Header = ({ children }: any) => {
         disablePictureInPicture
         disableRemotePlayback
         src="/assets/hero.mp4"
-        poster="/assets/hero.png"
+        poster="/assets/hero.jpg"
       />
       <div className="container">
         <div className="language">
