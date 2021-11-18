@@ -61,14 +61,17 @@ const SubscribeForm = () => {
   return (
     <section className="subscribe-form">
       <h2 className="big" id="FormHeading">
-        <FormattedMessage id="a_dating_app_for_dates" />
+        <FormattedMessage id="form_line_1" />
         <br />
         <FormattedMessage id="its_about_time" />
       </h2>
+      <p>
+        <FormattedMessage id="form_content" />
+      </p>
       {status !== "success" && (
         <form onSubmit={onSubmit}>
           <div className="row">
-            <label className="sr-only" htmlFor="Name">
+            <label htmlFor="Name">
               <FormattedMessage id="name" />
             </label>
             <input
@@ -81,7 +84,7 @@ const SubscribeForm = () => {
             />
           </div>
           <div className="row">
-            <label className="sr-only" htmlFor="Email">
+            <label htmlFor="Email">
               <FormattedMessage id="email" />
             </label>
             <input
@@ -114,7 +117,7 @@ const SubscribeForm = () => {
             </label>
           </div>
           <button
-            className={classNames("button big primary", { loading: isLoading })}
+            className={classNames("button big", { loading: isLoading })}
             disabled={isLoading}
           >
             <FormattedMessage id="join_now" />

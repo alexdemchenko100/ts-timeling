@@ -6,38 +6,57 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: initial;
   background-color: var(--color-black);
-  background-image: url("../assets/background.png");
   background-size: cover;
   // background-attachment: fixed;
   background-position: center;
   color: var(--color-white);
-  font-size: 1.5em;
+  position: relative;
+  @media all and (max-width: $mobile-max) {
+    text-align: center;
+  }
 
-  .container {
+  > video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  > .container {
     padding: 0 30px;
+    z-index: 2;
   }
   .logo {
-    width: 190px;
+    width: 160px;
+    margin-bottom: 4em;
     @media all and (min-width: $desktop-min) {
+      width: 190px;
       position: absolute;
       top: 60px;
       left: 60px;
     }
   }
   p {
-    margin: 0;
+    &.big {
+      font-size: 1.5em;
+    }
+    margin: var(--spacing-sm) 0;
   }
-  .button {
-    margin-top: var(--spacing-sm);
+
+  .header-actions {
+    margin-top: var(--spacing-lg);
   }
 
   .language {
     position: absolute;
     right: 20px;
     top: 20px;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
 
     a {
       text-decoration: none;

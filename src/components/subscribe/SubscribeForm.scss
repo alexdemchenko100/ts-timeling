@@ -1,6 +1,5 @@
 .subscribe-form {
-  color: var(--color-white);
-  background-color: #1d1d1f;
+  background-color: var(--color-theme);
   text-align: center;
   padding: 128px 32px;
   min-height: 100vh;
@@ -8,6 +7,19 @@
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+
+  p {
+    max-width: 450px;
+    margin: 1em auto;
+  }
+
+  > form {
+    text-align: initial;
+
+    > strong {
+      text-align: center;
+    }
+  }
 
   .button {
     margin-top: 50px;

@@ -1,11 +1,24 @@
 const strings = {
-  a_dating_app_for_dates: "A dating app for dates?",
+  months: "Months",
+  days: "Days",
+  hours: "Hours",
+  minutes: "Minutes",
+  seconds: "Seconds",
+  form_line_1: "A dating app for dates?",
+  form_content:
+    "Sign up and get the exclusive chance to win a spot at our launch party at Sawan, Oslo. Don't miss out!",
+  follow_us: "Follow us!",
   cookies: "Cookies",
+  coming_soon: "Coming soon",
   email: "Email",
   female: "Female",
   headline: "We have a date for you.",
   headline_sub:
     "Meet Timeling. Your calendar-based dating app for real life connections.",
+  headline_sub2:
+    "Sign up and get the exclusive chance to wina spot at our launch party at Sawan, Oslo.",
+  headline_sub2_short: "Sign up and get a chance to join our launch party.",
+  dont_miss_out: "Don't miss out!",
   male: "Male",
   name: "Name",
   its_about_time: "It's about time.",

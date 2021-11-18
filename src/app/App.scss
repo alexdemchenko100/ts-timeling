@@ -1,6 +1,8 @@
 @import "../styles/Variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap");
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
 *:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
@@ -66,11 +68,15 @@ table {
 :root {
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --font-base: 400 20px/1.5 "Lora", var(--font-family);
+  --font-base: 400 20px/1.5 "DM Sans", var(--font-family);
   --font-family-titles: "Lora", var(--font-family);
 
   --background-color: #ffebe3;
   --color: #111;
+
+  --color-theme: #ffaf8d;
+
+  --border-radius: 10px;
 }
 
 @keyframes fade-in {
@@ -188,6 +194,7 @@ p {
 h1 {
   font-size: 48px;
   font-weight: 700;
+  font-family: var(--font-family-titles);
 
   @media all and (max-width: $mobile-max) {
     font-size: 36px;
@@ -204,6 +211,7 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 700;
+  font-family: var(--font-family-titles);
   &.big {
     font-size: 48px;
     @media all and (max-width: $mobile-max) {
@@ -212,23 +220,103 @@ h2 {
   }
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+
+  @media all and (max-width: $mobile-max) {
+    flex-direction: column;
+
+    > .coming-soon {
+      order: 1;
+    }
+    > .button {
+      order: 2;
+    }
+  }
+}
+
+.coming-soon {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5em;
+  padding: 0.5em 0.8em;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 0.8em;
+  > .countdown {
+    display: flex;
+    font-family: "Roboto";
+    opacity: 0.8;
+    > div {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      + div {
+        margin-left: 0.5em;
+      }
+      > .value {
+        font-size: 1.2em;
+        line-height: 1em;
+      }
+      > .name {
+        text-transform: uppercase;
+        font-size: 0.4em;
+      }
+    }
+  }
+  > .soon {
+    margin: 0 0 0 0.65em;
+    padding: 0 0 0 0.65em;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    font-size: 0.8em;
+  }
+
+  @media all and (max-width: $mobile-max) {
+    flex-direction: column;
+    padding: 0.8em;
+    margin-left: 0;
+    margin-bottom: 0.8em;
+    > .soon {
+      margin: 0.65em 0 0 0;
+      padding: 0.65em 0 0 0;
+      border-left: none;
+      position: relative;
+
+      &:before {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        content: "";
+        display: block;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        width: 1.2em;
+      }
+    }
+  }
+}
+
 .button {
+  font-family: var(--font-family-titles);
+  font-weight: 700;
   color: var(--color-white);
   background-color: var(--color-black);
   padding: var(--spacing-sm) var(--spacing);
   display: inline-block;
-  border-radius: 0.8em;
-  font-weight: 700;
-}
+  border-radius: 0.5em;
+  text-align: center;
 
-.button.big {
-  padding: var(--spacing-sm) var(--spacing-md);
-  font-size: 1.2rem;
-}
-
-.button.primary {
-  background-color: #ffaf8d;
-  color: var(--color);
+  &.big {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 1.2rem;
+  }
+  &.primary {
+    background-color: var(--color-theme);
+    color: var(--color);
+  }
 }
 
 form {
@@ -250,10 +338,27 @@ form .button {
 
 input[type="text"],
 input[type="email"] {
-  border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+  font-family: var(--font-family-titles);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   text-align: left;
-  padding: var(--spacing) 0;
+  padding: 0.2em 0.5em;
   width: 100%;
+  background: #fff;
+  border-radius: 0.5em;
+
+  &:hover,
+  &:focus {
+    border-color: var(--color-black);
+  }
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.8em;
+  opacity: 0.75;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
+  display: block;
 }
 
 input[type="radio"] {
@@ -261,9 +366,19 @@ input[type="radio"] {
 }
 input[type="radio"] + label {
   margin: var(--spacing) var(--spacing-sm);
-  padding-left: var(--spacing);
+  padding-left: 1.2em;
   display: inline-block;
   position: relative;
+  font-family: var(--font-family-titles);
+  opacity: 1;
+  font-size: 1em;
+
+  + input[type="radio"] + label {
+    margin-left: var(--spacing-lg);
+    @media all and (max-width: $mobile-max) {
+      margin-left: var(--spacing-sm);
+    }
+  }
 }
 input[type="radio"] + label:before {
   content: "";
@@ -272,13 +387,15 @@ input[type="radio"] + label:before {
   top: 50%;
   border-radius: 100%;
   transform: translateY(-50%);
-  border: 1px solid var(--color-white);
-  width: 0.7em;
-  height: 0.7em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 0.8em;
+  height: 0.8em;
+  background-color: var(--color-white);
 }
 
 input[type="radio"]:checked + label:before {
-  background-color: var(--color-white);
+  background-color: var(--color-black);
+  border-color: var(--color-white);
 }
 
 /* ----------------- */
@@ -307,7 +424,7 @@ main {
   animation-fill-mode: forwards;
 
   &:not(.loading) {
-    background-color: var(--background-color);
+    background-color: #f5f8fa; // var(--background-color);
   }
 }
 

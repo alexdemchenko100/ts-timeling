@@ -1,5 +1,7 @@
 const strings = {
-  a_dating_app_for_dates: "En dating app for dates?",
+  form_line_1: "En dating app for dates?",
+  form_content:
+    "Sign up and get the exclusive chance to wina  sport at our launch party at Sawan, Oslo. Don't miss out!",
   cookies: "Cookies",
   email: "Epost",
   female: "Kvinne",

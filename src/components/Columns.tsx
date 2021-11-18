@@ -5,13 +5,13 @@ import "./Columns.scss";
 
 type Props = {
   videoUrl: string;
-  //   url: string;
+  url?: string;
   className?: string;
   title: ReactNode | ReactNode[];
   children: ReactNode | ReactNode[];
 };
 
-const Columns = ({ videoUrl, title, children, className }: Props) => {
+const Columns = ({ videoUrl, url, title, children, className }: Props) => {
   return (
     <section className={classNames("columns", className)}>
       <video
@@ -22,6 +22,7 @@ const Columns = ({ videoUrl, title, children, className }: Props) => {
         disablePictureInPicture
         disableRemotePlayback
         src={videoUrl}
+        poster={url}
       />
       <div>
         <h2 className="big">{title}</h2>
