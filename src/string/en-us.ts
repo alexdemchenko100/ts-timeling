@@ -4,7 +4,8 @@ const strings = {
   hours: "Hours",
   minutes: "Minutes",
   seconds: "Seconds",
-  form_line_1: "A dating app for dates?",
+  form_line_1: "Ready to meet?",
+  form_line_2: "No time-wasting, just dating.",
   form_content:
     "Sign up and get the exclusive chance to win a spot at our launch party at Sawan, Oslo. Don't miss out!",
   follow_us: "Follow us!",
@@ -12,12 +13,12 @@ const strings = {
   coming_soon: "Coming soon",
   email: "Email",
   female: "Female",
-  headline: "We have a date for you.",
-  headline_sub:
-    "Meet Timeling. Your calendar-based dating app for real life connections.",
+  headline: "Date in real life",
+  headline_sub: " Your calendar-based dating app for real life connections.",
   headline_sub2:
-    "Sign up and get the exclusive chance to wina spot at our launch party at Sawan, Oslo.",
-  headline_sub2_short: "Sign up and get a chance to join our launch party.",
+    "Sign up and get the exclusive chance to win a spot at our launch party at Sawan, Oslo.",
+  headline_sub2_short:
+    "Sign up and get a chance to join our launch party at Sawan, Oslo.",
   dont_miss_out: "Don't miss out!",
   male: "Male",
   name: "Name",
