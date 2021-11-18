@@ -11,13 +11,7 @@ import {
 
 const flags: any = {
   en: (
-    <svg
-      width="16"
-      height="12"
-      viewBox="0 0 16 12"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0H16V12H0V0Z" fill="#41479B" />
       <path
         d="M16 10.4375L10.0833 6.00001L16 1.5625V0H13.9167L8 4.43751L2.08333 0H0V1.5625L5.91667 6.00001L0 10.4375V12H2.08336L8 7.56251L13.9166 12H16V10.4375Z"
@@ -45,32 +39,25 @@ const flags: any = {
   ),
   nb: (
     <svg viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_642_80)">
-        <rect width="16" height="12" fill="#DC251C" />
-        <rect x="4" width="4" height="12" fill="#F5F8FB" />
-        <rect
-          x="16"
-          y="4"
-          width="4"
-          height="16"
-          transform="rotate(90 16 4)"
-          fill="#F5F8FB"
-        />
-        <rect x="5" width="2" height="12" fill="#41479B" />
-        <rect
-          x="16"
-          y="5"
-          width="2"
-          height="16"
-          transform="rotate(90 16 5)"
-          fill="#41479B"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0_642_80">
-          <rect width="16" height="12" fill="white" />
-        </clipPath>
-      </defs>
+      <rect width="16" height="12" fill="#DC251C" />
+      <rect x="4" width="4" height="12" fill="#F5F8FB" />
+      <rect
+        x="16"
+        y="4"
+        width="4"
+        height="16"
+        transform="rotate(90 16 4)"
+        fill="#F5F8FB"
+      />
+      <rect x="5" width="2" height="12" fill="#41479B" />
+      <rect
+        x="16"
+        y="5"
+        width="2"
+        height="16"
+        transform="rotate(90 16 5)"
+        fill="#41479B"
+      />
     </svg>
   ),
 };
