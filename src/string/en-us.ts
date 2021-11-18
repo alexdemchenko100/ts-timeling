@@ -42,9 +42,9 @@ const strings = {
     "A new kind of online dating: With Timeling, you can create a date, see who likes it and choose a match. Then you can chat or call to test the waters, confirm and meet up. No more wasting time, no more frustration. It’s a dating app with an active deadline, so to say.",
   ladies_first_title: "Ladies first",
   ladies_first_content_short:
-    "We’ve developed a system that eliminates creeps and timewasters. Our user rating filters for authenticity and sincerity.",
+    "We’ve developed a system that lets you confidentially share your experience with our admins, so that we can make Timeling a bad-date-free place for you to enjoy.",
   ladies_first_content_long:
-    "Who runs the world? Exactly. That’s why we’ve developed a system that eliminates creeps, catfishes, ghosters, timewasters and no-showers. Our user rating filters for authenticity and sincerity – and our algorithm makes sure that the people you meet also match.",
+    "Who runs the world? Exactly. That’s why we’ve developed a system that lets you confidentially share your experience with our admins, so that we can make Timeling a bad-date-free place for you to enjoy.",
   "404_status": "Not found",
   thank_you_submission_recieved:
     "Thank you! Your submission has been received!",
