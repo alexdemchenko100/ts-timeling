@@ -43,7 +43,7 @@ footer {
         padding: 0.2em 0.85em;
         display: flex;
         align-items: center;
-
+        transition: all 0.2s ease-in-out;
         &:focus {
           background-color: var(--color-white);
           color: var(--color-black);
