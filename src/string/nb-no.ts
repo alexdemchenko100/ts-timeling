@@ -11,7 +11,7 @@ const strings = {
   headline_sub2:
     "Meld deg på, så får du en eksklusiv mulighet til å vinne en plass på vårt lanseringsparty, på Sawan i Oslo. ",
   headline_sub2_short:
-    "Få en eksklusiv sjanse til å vinne plass på vår lanseringsfest på Sawan i Oslo. ",
+    "Meld deg på og få sjansen til å bli med på lanseringsfesten vår.",
   follow_us: "Følg oss!",
   coming_soon: "Kommer snart",
   cookies: "Cookies",
