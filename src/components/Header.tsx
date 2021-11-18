@@ -62,9 +62,11 @@ const Header = ({ children }: any) => {
         playsInline
         disablePictureInPicture
         disableRemotePlayback
-        src="/assets/hero.mp4"
         poster="/assets/hero.jpg"
-      />
+      >
+        <source src="/assets/hero.webm" type="video/webm; codecs=vp9,vorbis" />
+        <source src="/assets/hero.mp4" type="video/mp4" />
+      </video>
       <div className="container">
         <div className="language">
           {localeIso === "nb-NO" && (
