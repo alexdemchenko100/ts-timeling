@@ -9,7 +9,7 @@ const strings = {
   dont_miss_out: "Ikke gå glipp av dette!",
   headline_sub: "Din kalenderbaserte datingapp for møter i virkeligheten.",
   headline_sub2:
-    "Meld deg på, så får du en eksklusiv mulighet til å vinne en plass på vårt lanseringsparty, på Sawan i Oslo. ",
+    "Meld deg på for sjansen til å bli med på vår lanseringsfest. ",
   headline_sub2_short:
     "Meld deg på og få sjansen til å bli med på lanseringsfesten vår.",
   follow_us: "Følg oss!",
@@ -31,7 +31,7 @@ const strings = {
   join_the_waitlist: "Meld deg på ventelisten",
   scroll_dates_title: "Finn dater, ikke profiler",
   scroll_dates_content_short:
-    "Datingappen for, vel, datoer. Si farvel til endeløs chatting og tidssløsing.",
+    "Datingappen for... Vel... Dater! Si farvel til endeløs chatting og bortkastet tid.",
   scroll_dates_content_long:
     "Timeling er en kalenderbasert møteapp som lar deg gå på dater! Det sparer deg for endeløs chatting, ulike forventninger og ghosting – og lar deg faktisk møte nye mennesker, venner, eller kanskje ditt livs kjærlighet. Så slutt å sveipe, begynn å date. ",
   terms_of_service: "Betingelser",
@@ -43,7 +43,7 @@ const strings = {
     "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å sjekke nærmere, bekrefte og møtes. Ikke mer bortkastet tid, ikke mer frustrasjon. Det er rett og slett en datingapp med en tidsfrist, for å si det slik.",
   ladies_first_title: "Damene først",
   ladies_first_content_short:
-    "Vi har utviklet et system som fjerner eklinger og de som kaster bort tid. Vår brukerrangering filtrer for autentisitet og ærlighet. ",
+    "Vi har utviklet et system som fjerner eklinger og de som kaster bort tid. Vår brukerrangering filtrer for autentisitet og ærlighet.",
   ladies_first_content_long:
     "Hvem styrer verden? Nettopp. Derfor har vi utviklet et system som eliminerer eklinger, falske profiler, ghostere og folk som ikke dukker opp. Vår brukerrangering filtrerer ut disse og henter frem de autentiske og ærlige – og algoritmen vår sørger for at de du møter er en god match. ",
   "404_status": "Ikke funnet",
