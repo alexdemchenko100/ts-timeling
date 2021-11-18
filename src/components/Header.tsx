@@ -18,23 +18,11 @@ const flags: any = {
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
         d="M0 0.62513V0H0.833161L7.99951 5.37477L15.1659 0H15.9997L16 0.000415282V0.624395L8.83284 5.99977L16 11.3751V11.9991L15.9993 12H15.1665L7.99951 6.62477L0.832552 12H0V11.3744L7.16618 5.99977L0 0.62513Z"
         fill="#DC251C"
       />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M6 4V0H10V4H16V8H10V12H6V8H0V4H6Z"
-        fill="white"
-      />
-      <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
-        d="M7 5V0H9V5H16V7H9V12H7V7H0V5H7Z"
-        fill="#DC251C"
-      />
+      <path d="M6 4V0H10V4H16V8H10V12H6V8H0V4H6Z" fill="white" />
+      <path d="M7 5V0H9V5H16V7H9V12H7V7H0V5H7Z" fill="#DC251C" />
     </svg>
   ),
   nb: (
