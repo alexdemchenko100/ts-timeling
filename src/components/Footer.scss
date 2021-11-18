@@ -38,11 +38,23 @@ footer {
       > a {
         text-decoration: none;
         margin-left: var(--spacing);
-        border: 2px solid currentColor;
+        border: 2px solid var(--color-white);
         border-radius: 0.5em;
         padding: 0.2em 0.85em;
         display: flex;
         align-items: center;
+
+        &:focus {
+          background-color: var(--color-white);
+          color: var(--color-black);
+        }
+
+        @media (pointer: fine) {
+          &:hover {
+            background-color: var(--color-white);
+            color: var(--color-black);
+          }
+        }
 
         > .icon {
           margin-right: 0.2em;
