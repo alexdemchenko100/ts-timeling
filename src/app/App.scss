@@ -365,18 +365,21 @@ input[type="radio"] {
   position: absolute;
 }
 input[type="radio"] + label {
-  margin: var(--spacing) var(--spacing-sm);
   padding-left: 1.2em;
   display: inline-block;
   position: relative;
   font-family: var(--font-family-titles);
   opacity: 1;
   font-size: 1em;
+  margin: var(--spacing) var(--spacing-sm);
+  @media all and (max-width: $mobile-max) {
+    margin: var(--spacing) var(--spacing-xs);
+  }
 
   + input[type="radio"] + label {
     margin-left: var(--spacing-lg);
     @media all and (max-width: $mobile-max) {
-      margin-left: var(--spacing-sm);
+      margin-left: var(--spacing-xs);
     }
   }
 }
@@ -424,7 +427,7 @@ main {
   animation-fill-mode: forwards;
 
   &:not(.loading) {
-    background-color: #f5f8fa; // var(--background-color);
+    background-color: #f3f6f9; // var(--background-color);
   }
 }
 

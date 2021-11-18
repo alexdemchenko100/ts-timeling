@@ -6,15 +6,13 @@ const strings = {
   seconds: "Seconds",
   form_line_1: "Ready to meet?",
   form_line_2: "No time-wasting, just dating.",
-  form_content:
-    "Sign up and get the exclusive chance to win a spot at our launch party at Sawan, Oslo. Don't miss out!",
   follow_us: "Follow us!",
   cookies: "Cookies",
   coming_soon: "Coming soon",
   email: "Email",
   female: "Female",
   headline: "Date in real life",
-  headline_sub: " Your calendar-based dating app for real life connections.",
+  headline_sub: "Your calendar-based dating app for real life connections.",
   headline_sub2:
     "Sign up and get the exclusive chance to win a spot at our launch party at Sawan, Oslo.",
   headline_sub2_short:

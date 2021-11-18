@@ -63,10 +63,15 @@ const SubscribeForm = () => {
       <h2 className="big" id="FormHeading">
         <FormattedMessage id="form_line_1" />
         <br />
-        <FormattedMessage id="its_about_time" />
+        <FormattedMessage id="form_line_2" />
       </h2>
-      <p>
-        <FormattedMessage id="form_content" />
+      <p className="non-mobile">
+        <FormattedMessage id="headline_sub2" />
+        <br />
+        <FormattedMessage id="dont_miss_out" />
+      </p>
+      <p className="mobile">
+        <FormattedMessage id="headline_sub2_short" />
       </p>
       {status !== "success" && (
         <form onSubmit={onSubmit}>
@@ -91,7 +96,7 @@ const SubscribeForm = () => {
               type="email"
               maxLength={256}
               name="email"
-              placeholder={intl.formatMessage({ id: "email" })}
+              placeholder={"example@mail.com"}
               required
               id="Email"
             />

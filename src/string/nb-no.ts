@@ -1,13 +1,16 @@
 const strings = {
-  form_line_1: "En dating app for dates?",
-  form_content:
-    "Sign up and get the exclusive chance to wina  sport at our launch party at Sawan, Oslo. Don't miss out!",
+  form_line_1: "Klar til å møtes?",
+  form_line_2: "No time-wasting, just dating.",
+  dont_miss_out: "Ikke gå glipp av det!",
+  headline_sub: "Din kalender-basert dating app for ekte relasjoner.",
+  headline_sub2:
+    "Registrer deg og få den eksklusive sjansen til å vinne en plass på lanseringsfesten vår på Sawan, Oslo.",
+  headline_sub2_short:
+    "Registrer deg og få sjansen til å bli med på lanseringsfesten vår på Sawan, Oslo.",
   cookies: "Cookies",
   email: "Epost",
   female: "Kvinne",
   headline: "Din neste date venter på deg.",
-  headline_sub:
-    "Hils på Timeling. En kalender-basert dating app for ekte relasjoner.",
   male: "Mann",
   name: "Navn",
   its_about_time: "Tiden er inne.",
