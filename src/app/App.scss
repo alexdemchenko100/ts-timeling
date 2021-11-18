@@ -205,6 +205,9 @@ h1 {
     @media all and (max-width: $mobile-max) {
       font-size: 44px;
     }
+    @media all and (max-width: 320px) {
+      font-size: 36px;
+    }
   }
 }
 
@@ -216,6 +219,9 @@ h2 {
     font-size: 48px;
     @media all and (max-width: $mobile-max) {
       font-size: 32px;
+    }
+    @media all and (max-width: 320px) {
+      font-size: 30px;
     }
   }
 }
