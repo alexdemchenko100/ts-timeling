@@ -7,7 +7,7 @@ const strings = {
   form_line_1: "Klar for å møtes?",
   form_line_2: "Ingen bortkastet tid – bare dating.",
   dont_miss_out: "Ikke gå glipp av dette!",
-  headline_sub: "Din kalenderbaserte datingapp for møter i virkeligheten.",
+  headline_sub: "Kalenderbasert datingapp for møter i virkeligheten.",
   headline_sub2:
     "Meld deg på og få en eksklusiv mulighet til å vinne en billett til lanseringsfesten vår på Sawan i Oslo.",
   headline_sub2_short:
@@ -33,19 +33,19 @@ const strings = {
   scroll_dates_content_short:
     "Datingappen for... Vel... Dater! Si farvel til endeløs chatting og bortkastet tid.",
   scroll_dates_content_long:
-    "Timeling er en kalenderbasert møteapp som lar deg gå på dater! Det sparer deg for endeløs chatting, ulike forventninger og ghosting – og lar deg faktisk møte nye mennesker, venner, eller kanskje ditt livs kjærlighet. Så slutt å sveipe, begynn å date. ",
+    "Timeling er en kalenderbasert møteapp som lar deg gå på dater. Det sparer deg for endeløs chatting, ulike forventninger og ghosting - og lar deg faktisk møte nye mennesker, venner og kanskje ditt livs kjærlighet. Så slutt å sveipe, begynn å date.",
   terms_of_service: "Betingelser",
   privacy_policy: "Personvern",
-  time_we_met_title: "På tide vi møtes",
+  time_we_met_title: "På tide at vi møtes",
   time_we_met_content_short:
-    "Nettdating på Timeling-måten: Bare lag en date, se hvem som liker den og velg en match. Så enkelt!",
+    "Nettdating på Timeling-måten: Opprett en date, se hvem som er interessert og velg en match. Så enkelt er det!",
   time_we_met_content_long:
-    "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å sjekke nærmere, bekrefte og møtes. Ikke mer bortkastet tid, ikke mer frustrasjon. Det er rett og slett en datingapp med en tidsfrist.",
+    "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å bli bedre kjent, bekrefte daten og møtes. Mindre bortkastet tid og mindre frustrasjon. Det er rett og slett en datingapp med en tidsfrist.",
   ladies_first_title: "Damene først",
   ladies_first_content_short:
-    "Vi har utviklet et system som fjerner eklinger og de som kaster bort tid. Vår brukerrangering filtrer for autentisitet og ærlighet.",
+    "Vi har utviklet et system som lar deg dele opplevelsene dine med vårt team, helt konfidensielt, slik at vi kan gjøre Timeling til en trygg møteplass uten ubehagelige opplevelser.",
   ladies_first_content_long:
-    "Hvem styrer verden? Nettopp. Derfor har vi utviklet et system som eliminerer falske profiler, ghostere og folk med uønsket adferd. Vårt system filtrerer disse ut og henter frem de autentiske og ærlige – og algoritmen vår sørger for at de du møter er en god match.",
+    "Hvem styrer verden? Nettopp. Derfor har vi laget et system som lar deg dele opplevelsene dine med vårt team, helt konfidensielt, slik at vi kan gjøre TImeling til en trygg møteplass uten ubehagelige opplevelser.",
   "404_status": "Ikke funnet",
   thank_you_submission_recieved:
     "Takk skal du ha! Innsendingen din er mottatt!",
