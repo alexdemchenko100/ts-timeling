@@ -1,6 +1,8 @@
 import classNames from "classnames";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
+import { clientDefaultLanguage, getCurrent } from "../../lib/locale";
+import Link from "../global/Link";
 
 import "./SubscribeForm.scss";
 
@@ -9,6 +11,7 @@ type SubscribeModel = {
   type: number;
   content: string;
   sex: string;
+  language: string;
 };
 
 const SubscribeForm = () => {
@@ -18,6 +21,8 @@ const SubscribeForm = () => {
   const [status, setStatus] = useState<"success" | "error" | undefined>(
     undefined
   );
+
+  const localeIso = useMemo(() => getCurrent() || clientDefaultLanguage, []);
 
   const onSubmit = async (e: any) => {
     e.preventDefault();
@@ -35,6 +40,7 @@ const SubscribeForm = () => {
       type: 1, //email
       content: elem.email.value,
       sex: elem.sex.value,
+      language: localeIso,
     };
 
     try {
@@ -119,6 +125,27 @@ const SubscribeForm = () => {
             />
             <label htmlFor="Sex_null">
               <FormattedMessage id="other" />
+            </label>
+          </div>
+          <div className="row checkbox">
+            <input
+              type="checkbox"
+              name="terms"
+              id="Terms"
+              value="terms"
+              required
+            />
+            <label htmlFor="Terms">
+              <FormattedMessage
+                id="i_agree_to_the_0"
+                values={{
+                  0: (
+                    <Link href="/terms">
+                      <FormattedMessage id="terms_of_service" />
+                    </Link>
+                  ),
+                }}
+              />
             </label>
           </div>
           <button

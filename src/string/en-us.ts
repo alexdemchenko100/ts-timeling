@@ -22,6 +22,7 @@ const strings = {
   dont_miss_out: "Don't miss out!",
   male: "Male",
   name: "Name",
+  i_agree_to_the_0: "I agree to the {0}",
   its_about_time: "It's about time.",
   notify_me: "Notify me",
   lets_meet_up: "Let's meet up",
