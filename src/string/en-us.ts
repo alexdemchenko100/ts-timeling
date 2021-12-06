@@ -41,11 +41,11 @@ const strings = {
     "Online dating, the Timeling way: Simply create a date, see who likes it and choose a match. Simple as that.",
   time_we_met_content_long:
     "A new kind of online dating: With Timeling, you can create a date, see who likes it and choose a match. Then you can chat or call to test the waters, confirm and meet up. No more wasting time, no more frustration. It’s a dating app with an active deadline, so to say.",
-  ladies_first_title: "Ladies first",
+  ladies_first_title: "Say goodbye to bad dates",
   ladies_first_content_short:
-    "We’ve developed a system that lets you confidentially share your experience with our admins, so that we can make Timeling a bad-date-free place for you to enjoy.",
+    "We want you to enjoy your time with Timeling. That’s why we’ve developed a system that lets you confidentially share your experience with our admins.",
   ladies_first_content_long:
-    "Who runs the world? Exactly. That’s why we’ve developed a system that lets you confidentially share your experience with our admins, so that we can make Timeling a bad-date-free place for you to enjoy.",
+    "We want you to enjoy your time with Timeling. That’s why we've developed a system that lets you confidentially share your experience with our admins so that we can ensure a community that doesn't waste your time.	",
   "404_status": "Not found",
   thank_you_submission_recieved:
     "Thank you! Your submission has been received!",

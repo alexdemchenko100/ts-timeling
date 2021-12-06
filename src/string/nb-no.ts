@@ -41,11 +41,11 @@ const strings = {
     "Nettdating på Timeling-måten: Opprett en date, se hvem som er interessert og velg en match. Så enkelt er det!",
   time_we_met_content_long:
     "En ny type nettdating: med Timeling kan du lage en date, se hvem som liker den og velge en match. Så kan dere chatte eller ringes for å bli bedre kjent, bekrefte daten og møtes. Mindre bortkastet tid og mindre frustrasjon. Det er rett og slett en datingapp med en tidsfrist.",
-  ladies_first_title: "Damene først",
+  ladies_first_title: "Si farvel til dårlige dater",
   ladies_first_content_short:
-    "Vi har utviklet et system som lar deg dele opplevelsene dine med vårt team, helt konfidensielt, slik at vi kan gjøre Timeling til en trygg møteplass uten ubehagelige opplevelser.",
+    "Vi vil at du skal kose deg med Timeling. Derfor har vi utviklet et system som lar deg dele din opplevelse med vårt team, helt konfidensielt.",
   ladies_first_content_long:
-    "Hvem styrer verden? Nettopp. Derfor har vi laget et system som lar deg dele opplevelsene dine med vårt team, helt konfidensielt, slik at vi kan gjøre TImeling til en trygg møteplass uten ubehagelige opplevelser.",
+    "Vi vil at du skal kose deg med Timeling. Derfor har vi utviklet et system som lar deg dele din opplevelse med vårt team, helt konfidensielt. På denne måten lager vi et samfunn som ikke kaster bort tiden din. ",
   "404_status": "Ikke funnet",
   thank_you_submission_recieved:
     "Takk skal du ha! Innsendingen din er mottatt!",
