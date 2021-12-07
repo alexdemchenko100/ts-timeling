@@ -23,6 +23,7 @@ const strings = {
   headline: "Date i det virkelige liv.",
   male: "Mann",
   name: "Navn",
+  i_agree_to_the_0: "Jeg godtar {0}",
   its_about_time: "Tiden er inne.",
   notify_me: "Varsle meg",
   lets_meet_up: "La oss møtes",
