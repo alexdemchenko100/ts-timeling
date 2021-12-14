@@ -23,7 +23,7 @@ const strings = {
   dont_miss_out: "Don't miss out!",
   male: "Male",
   name: "Name",
-  i_agree_to_the_0: "By clicking join waitlist you are accepting our {0}",
+  i_agree_to_the_0: "I agree to the {0}",
   by_click_0_you_agree_to_1: "By clicking {0} you are accepting our {1}",
   its_about_time: "It's about time.",
   notify_me: "Notify me",

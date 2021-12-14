@@ -24,6 +24,8 @@ const strings = {
   male: "Mann",
   name: "Navn",
   i_agree_to_the_0: "Jeg godtar {0}",
+  by_click_0_you_agree_to_1:
+    'Ved å klikke på "bli med nå" aksepterer du våre betingelser',
   its_about_time: "Tiden er inne.",
   notify_me: "Varsle meg",
   lets_meet_up: "La oss møtes",
