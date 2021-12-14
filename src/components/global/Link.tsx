@@ -134,7 +134,6 @@ const Link = (props: any) => {
         exact
         to={disabled ? undefined : href || to}
         className={classNames(
-          "type-a",
           {
             disabled,
           },
@@ -154,7 +153,6 @@ const Link = (props: any) => {
     <a
       href={disabled ? undefined : href}
       className={classNames(
-        "type-a",
         {
           active: isCurrentUrl,
           disabled,

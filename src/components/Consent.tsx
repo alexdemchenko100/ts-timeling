@@ -2,24 +2,19 @@ import { useState } from "react";
 import Modal from "./Modal";
 
 import "./Consent.scss";
+import { getAllConsent, hasConsent, setConsent } from "../lib/consent";
+import { FormattedMessage } from "react-intl";
+import Link from "./global/Link";
 
 // const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
 
-(window as any).fbq("consent", "grant");
-
-//Apparently we dont need this
 const Consent = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  const onHandleDecline = () => {
-    window.localStorage.setItem("cookiesConsent", "false");
-    setModalIsOpen(false);
-  };
+  const [modalIsOpen, setModalIsOpen] = useState(!hasConsent());
 
   const onHandleAccept = () => {
     window.localStorage.setItem("cookiesConsent", "true");
     setModalIsOpen(false);
-    (window as any).fbq("consent", "grant");
+    setConsent(getAllConsent());
   };
 
   return (
@@ -30,14 +25,17 @@ const Consent = () => {
       className="popup-consent"
     >
       <div className="header">
-        <h1>Accept cookies?</h1>
+        <FormattedMessage id="cookies_text" />{" "}
+        <Link href="/terms">
+          <FormattedMessage id="read_more" />
+        </Link>
       </div>
       <div className="bottom">
-        <button className="button" onClick={onHandleDecline}>
-          Decline
-        </button>
-        <button className="button" onClick={onHandleAccept}>
-          Accept
+        <Link className="button contained" href="/terms">
+          <FormattedMessage id="set_preferences" />
+        </Link>
+        <button className="button " onClick={onHandleAccept}>
+          <FormattedMessage id="accept_all" />
         </button>
       </div>
     </Modal>

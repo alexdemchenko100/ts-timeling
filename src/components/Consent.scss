@@ -1,3 +1,5 @@
+@import "../styles/Variables";
+
 .popup-consent {
   height: auto;
   bottom: 0;
@@ -5,11 +7,34 @@
   background: none;
   backdrop-filter: none;
 
-  > div > .popup-container {
-    margin-bottom: 0;
+  > div {
+    padding: 0.25em !important;
+    > .popup-container {
+      margin-bottom: 0;
 
-    h1 {
-      font-size: 32px;
+      > .popup-content {
+        max-width: none;
+
+        align-items: center;
+        font-size: 0.7em;
+        text-align: initial;
+        @media all and (min-width: $desktop-min) {
+          display: flex;
+        }
+
+        > .header {
+          padding: 24px;
+        }
+
+        > .bottom {
+          justify-content: flex-end;
+          flex-shrink: 0;
+
+          > .button + .button {
+            margin-left: 0.5em;
+          }
+        }
+      }
     }
   }
 }

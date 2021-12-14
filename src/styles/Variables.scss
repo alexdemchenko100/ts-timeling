@@ -8,11 +8,11 @@ $desktop-min: 736px;
 
   $spacers: (
     0: 0,
-    1: math.div($spacer, 4),
+    1: math.div($spacer, 3),
     2: math.div($spacer, 2),
     3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 2,
+    4: $spacer * 2,
+    5: $spacer * 3,
   );
 
   --spacing-xs: #{map-get($spacers, 1)};

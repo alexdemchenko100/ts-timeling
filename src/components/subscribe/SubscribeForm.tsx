@@ -128,7 +128,23 @@ const SubscribeForm = () => {
             </label>
           </div>
           <div className="row checkbox">
-            <input
+            <strong>
+              <FormattedMessage
+                id="by_click_0_you_agree_to_1"
+                values={{
+                  0: <FormattedMessage id="join_now" />,
+                  1: (
+                    <>
+                      <br />
+                      <Link href="/terms">
+                        <FormattedMessage id="terms_of_service" />
+                      </Link>
+                    </>
+                  ),
+                }}
+              />
+            </strong>
+            {/* <input
               type="checkbox"
               name="terms"
               id="Terms"
@@ -146,7 +162,7 @@ const SubscribeForm = () => {
                   ),
                 }}
               />
-            </label>
+            </label> */}
           </div>
           <button
             className={classNames("button big", { loading: isLoading })}
