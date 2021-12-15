@@ -71,12 +71,20 @@ table {
   --font-base: 400 20px/1.5 "DM Sans", var(--font-family);
   --font-family-titles: "Lora", var(--font-family);
 
-  --background-color: #ffebe3;
+  --background-color: #f3f6f9;
+  --background-color-neutral: #fff;
   --color: #111;
 
   --color-theme: #ffaf8d;
 
   --border-radius: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color-neutral: #111;
+    --color: #fff;
+  }
 }
 
 @keyframes fade-in {
@@ -93,7 +101,7 @@ table {
 }
 
 html {
-  transition: var(--background-color) 0.2s linear;
+  transition: background-color 0.2s linear;
   font: var(--font-base);
   margin: 0;
   padding: 0;
@@ -323,7 +331,7 @@ h2 {
   }
   &.primary {
     background-color: var(--color-theme);
-    color: var(--color);
+    color: var(--color-black);
   }
   &.contained {
     background-color: transparent;
@@ -454,7 +462,8 @@ main {
   animation-fill-mode: forwards;
 
   &:not(.loading) {
-    background-color: #f3f6f9; // var(--background-color);
+    background-color: var(--background-color);
+    color: var(--color-black);
   }
 }
 
