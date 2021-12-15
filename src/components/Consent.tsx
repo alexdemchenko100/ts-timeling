@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 
 import "./Consent.scss";
-import { getAllConsent, hasConsent, setConsent } from "../lib/consent";
+import { getAllConsent, setConsent } from "../lib/consent";
 import { FormattedMessage } from "react-intl";
 import Link from "./global/Link";
 
