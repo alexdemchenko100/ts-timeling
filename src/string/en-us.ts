@@ -5,10 +5,17 @@ const strings = {
   minutes: "Minutes",
   seconds: "Seconds",
   accept_all: "Accept all",
+  all_cookies: "All cookies",
+  all_cookies_info: "Enable all cookies.",
+  advertising_cookies: "Advertising cookies",
+  advertising_cookies_info: "We use cookies to serve ads.",
   form_line_1: "Ready to meet?",
   form_line_2: "No time-wasting, just dating.",
   follow_us: "Follow us!",
   cookies: "Cookies",
+  cookie_settings: "Cookie settings",
+  cookie_settings_text:
+    "Both Timeling aswell as our partners use tools to understand our audience better and enhance the experience of the App. These tools allow us to provide features such as authentication.",
   cookies_consent: "By using our website, you agree to our cookie policy.",
   cookies_text:
     "We use cookies to help improve your experience on our website. This cookie policy is part of Timeling Limited's privacy policy, and covers the use of cookies between your device and our site.",
@@ -32,6 +39,7 @@ const strings = {
   join_now: "Join now",
   join_the_waitlist: "Join waitlist",
   read_more: "Read more",
+  save_preferences: "Save preferences",
   set_preferences: "Set preferences",
   scroll_dates_title: "Scroll dates,{0}not profiles",
   scroll_dates_content_short:

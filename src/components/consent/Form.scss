@@ -1,0 +1,20 @@
+@import "../../styles/Variables";
+
+.consent-form {
+  @media all and (min-width: $desktop-min) {
+    display: flex;
+  }
+  .input-control.type-toggle {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    opacity: 1;
+  }
+
+  > .row {
+    padding: 0 12px;
+    ul {
+      list-style: initial;
+      margin-left: 2em;
+    }
+  }
+}

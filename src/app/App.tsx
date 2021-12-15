@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import Consent from "../components/Consent";
+import Consent from "../components/consent/Consent";
 import Routes from "../routes/Routes";
 
 import "./App.scss";

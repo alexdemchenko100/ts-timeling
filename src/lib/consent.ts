@@ -2,6 +2,19 @@ export type Consent = {
   ads: boolean;
   expires: Date;
 };
+
+export const names = {
+  // required: ["idsrv.session"],
+  ads: [
+    "_gcl_au",
+    " _fbp",
+    "_ga_VD1GBHLVR8",
+    " _ga",
+    " _gid",
+    " _gat_gtag_UA_209671318_1",
+  ],
+};
+
 export const getDefaultConsent = (): Consent => {
   const date = new Date();
   date.setDate(date.getDate() + 90);
@@ -55,7 +68,6 @@ export const setConsent = (consent: Consent) => {
     (window as any).fbq("consent", "grant");
   }
 };
-
 export const hasConsent = (type?: "ads") => {
   if (!type) return !!getCurrentConsent();
 

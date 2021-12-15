@@ -1,4 +1,4 @@
-@import "../styles/Variables";
+@import "../../styles/Variables";
 
 .popup-consent {
   height: auto;
@@ -6,6 +6,18 @@
   top: auto;
   background: none;
   backdrop-filter: none;
+
+  &.expanded {
+    > div > .popup-container > .popup-content {
+      flex-direction: column;
+      > .header {
+        padding-bottom: 0;
+      }
+      > .bottom {
+        align-self: flex-end;
+      }
+    }
+  }
 
   > div {
     padding: 0.25em !important;
@@ -24,6 +36,11 @@
 
         > .header {
           padding: 24px;
+        }
+
+        > .content {
+          padding: 0 12px;
+          align-self: flex-start;
         }
 
         > .bottom {

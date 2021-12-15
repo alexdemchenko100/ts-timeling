@@ -130,7 +130,7 @@ svg {
 }
 
 ::selection {
-  background-color: var(--color-peach);
+  background-color: var(--color-theme);
   color: var(--background-color);
 }
 
@@ -473,5 +473,76 @@ main {
   > .route-container {
     flex-grow: 1;
     min-height: 100%;
+  }
+}
+
+.input.type-toggle {
+  display: block;
+  margin-left: 0;
+  border-radius: 3px;
+  line-height: 1.5em;
+  text-transform: none;
+  font-size: 1rem;
+  background: none;
+  // border-width: 0px;
+  transition: background-color 0.2s linear;
+  position: relative;
+  // color: var(--color-theme);
+  padding: 0 50px 0 0;
+  text-align: left;
+
+  &.disabled,
+  &.readonly {
+    opacity: 0.25;
+  }
+
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 16px;
+    background: none;
+    border-radius: 20%;
+    color: var(--color-white);
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+    left: auto;
+    right: 0;
+    padding: 0;
+    background-color: var(--color-gray-transparent);
+  }
+
+  &::before {
+    width: 44px;
+    height: 26px;
+    border-radius: 13px;
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(127, 127, 127, 0.2);
+  }
+
+  &::after {
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    transition: margin-right 0.2s ease-in-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: var(--color-white);
+    margin-right: 2px;
+  }
+
+  &:not(.checked) {
+    &::after {
+      margin-right: 20px;
+    }
+  }
+
+  &.checked {
+    &::before {
+      background-color: var(--color-theme);
+    }
   }
 }
