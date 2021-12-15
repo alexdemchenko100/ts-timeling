@@ -7,9 +7,10 @@ import { FormattedMessage } from "react-intl";
 import Link from "./global/Link";
 
 // const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
+setConsent(getAllConsent());
 
 const Consent = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(!hasConsent());
+  const [modalIsOpen, setModalIsOpen] = useState(false); //!hasConsent());
 
   const onHandleAccept = () => {
     window.localStorage.setItem("cookiesConsent", "true");
