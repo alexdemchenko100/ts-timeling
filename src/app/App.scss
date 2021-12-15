@@ -353,7 +353,7 @@ input[type="text"],
 input[type="email"] {
   font-family: var(--font-family-titles);
   border: 1px solid rgba(0, 0, 0, 0.3);
-  text-align: left;
+  text-align: initial;
   padding: 0.2em 0.5em;
   width: 100%;
   background: #fff;
