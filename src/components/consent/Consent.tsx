@@ -29,7 +29,7 @@ const Consent = () => {
         <Modal
             contentLabel="Consent"
             onClose={() => {}}
-            isOpen={true}
+            isOpen={modalIsOpen}
             className={classNames("popup-consent", { expanded: isExpanded })}
         >
             <div className="header">
