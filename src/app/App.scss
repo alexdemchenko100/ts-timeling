@@ -402,7 +402,7 @@ input[type="checkbox"] + label {
     + input[type="checkbox"] + label {
         // margin-left: var(--spacing-lg);
         @media all and (max-width: $mobile-max) {
-            margin-left: var(--spacing-xs);
+            // margin-left: var(--spacing-xs);
         }
     }
 }
