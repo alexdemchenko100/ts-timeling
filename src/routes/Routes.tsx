@@ -36,7 +36,7 @@ const Routes = (props: any) => {
                 <Route path={`/:locale${languageRegex}/unsubscribe`} exact {...props}>
                     <Unsubscribe />
                 </Route>
-                <Redirect exact from="/" to="/en-gb" />
+                {/* <Redirect exact from="/" to="/en-gb" /> */}
 
                 <Route path={`/:locale${languageRegex}`} exact {...props}>
                     <Home />
