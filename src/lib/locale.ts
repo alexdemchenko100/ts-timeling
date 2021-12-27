@@ -1,15 +1,10 @@
-import en_gb from "../string/en-gb";
-import nb_NO from "../string/nb-no";
-
 export type ImportObject = {
     [key: string]: any | undefined;
 };
 
 const stringImports: ImportObject = {
-    // "en-GB": () => import("../string/en-gb"),
-    // "nb-NO": () => import("../string/nb-no"),
-    "en-GB": en_gb,
-    "nb-NO": nb_NO,
+    "en-GB": () => import("../string/en-gb"),
+    "nb-NO": () => import("../string/nb-no"),
     // "en-US": () => import("../string/en-us"),
     // "sv-SE": () => import("../string/sv-se"),
 };
@@ -127,6 +122,5 @@ export const loadStrings = (locale: string) => {
 
     if (!strings) strings = stringImports[defaultLanguage];
 
-    return strings;
-    // return strings().then((m: any) => m.default);
+    return strings().then((m: any) => m.default);
 };

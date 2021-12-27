@@ -16,10 +16,9 @@ const LocaleApp = ({ children }: any) => {
     useEffect(() => {
         if (!localeIso) return;
 
-        setStrings(loadStrings(localeIso));
-        // loadStrings(localeIso)
-        //   .then(setStrings)
-        //   .catch((err: any) => console.error("Strings error: " + err));
+        loadStrings(localeIso)
+            .then(setStrings)
+            .catch((err: any) => console.error("Strings error: " + err));
     }, [localeIso]);
 
     if (!strings || !localeIso) return null; // return <AppLoader withIntl={false}></AppLoader>;
