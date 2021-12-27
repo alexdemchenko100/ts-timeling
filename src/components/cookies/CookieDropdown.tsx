@@ -12,7 +12,7 @@ export const CookieDropdown = ({ title, data }: iProps) => {
     const handleClick = () => setIsOpen(!isOpen);
 
     const dropdownClass = isOpen ? "show all" : "show";
-    const iconDropdownClass = isOpen ? "icon" : "icon-down";
+    const iconDropdownClass = isOpen ? "icon-open" : "icon";
 
     return (
         <div className="cookie-dropdown">
