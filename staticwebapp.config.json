@@ -1,11 +1,12 @@
 {
     "routes": [
         {
-            "route": "*"
+            "route": "*",
+            "rewrite": "index.html"
         }
     ],
     "navigationFallback": {
-        "rewrite": "/index.html",
+        "rewrite": "index.html",
         "exclude": ["/assets/*.{png,jpg,gif,mp4}", "/static/css/*"]
     },
     "globalHeaders": {
