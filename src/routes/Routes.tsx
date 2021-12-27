@@ -14,7 +14,6 @@ const languageRegex = `(${languages.join("|")})?`;
 
 const Routes = (props: any) => {
     const location = useLocation();
-    console.log("🚀 ~ file: Routes.tsx ~ line 14 ~ languageRegex", languageRegex);
 
     return (
         <Suspense

@@ -1,125 +1,132 @@
+import en_gb from "../string/en-gb";
+import nb_NO from "../string/nb-no";
+
 export type ImportObject = {
-  [key: string]: any | undefined;
+    [key: string]: any | undefined;
 };
 
 const stringImports: ImportObject = {
-  "en-GB": () => import("../string/en-gb"),
-  "nb-NO": () => import("../string/nb-no"),
-  // "en-US": () => import("../string/en-us"),
-  // "sv-SE": () => import("../string/sv-se"),
+    // "en-GB": () => import("../string/en-gb"),
+    // "nb-NO": () => import("../string/nb-no"),
+    "en-GB": en_gb,
+    "nb-NO": nb_NO,
+    // "en-US": () => import("../string/en-us"),
+    // "sv-SE": () => import("../string/sv-se"),
 };
+
 export const defaultLanguage = Object.keys(stringImports)[0];
 
 export const languages = Object.keys(stringImports);
 
 //Converts EN-> en, en-us -> en-US, EN-us -> en-US
 const getCased = (locale: string) => {
-  if (!locale.includes("-")) return locale.toLowerCase();
-  const parts = locale.split("-");
-  return parts[0].toLowerCase() + "-" + parts[1].toUpperCase();
+    if (!locale.includes("-")) return locale.toLowerCase();
+    const parts = locale.split("-");
+    return parts[0].toLowerCase() + "-" + parts[1].toUpperCase();
 };
 
 //Gets the current language based on url params etc.
 export const getCurrent = () => {
-  const currentInPath = window.location.pathname.split("/")[1];
+    const currentInPath = window.location.pathname.split("/")[1];
 
-  //Invalid format
-  if (currentInPath.match(/[a-z]{2}-[a-z]{2}/) === null) return undefined;
+    //Invalid format
+    if (currentInPath.match(/[a-z]{2}-[a-z]{2}/) === null) return undefined;
 
-  const current = getCased(currentInPath);
+    const current = getCased(currentInPath);
 
-  //Unsupported locale
-  if (!languages.includes(current)) return undefined;
+    //Unsupported locale
+    if (!languages.includes(current)) return undefined;
 
-  return current;
+    return current;
 };
 
 //Get url with locale
 export const urlWithLocale = (uri: string, locale?: string) => {
-  if (!locale) return uri;
-  //Relative url
-  if (uri.startsWith("/") || uri === "") {
-    let newUrl = uri;
+    if (!locale) return uri;
+    //Relative url
+    if (uri.startsWith("/") || uri === "") {
+        let newUrl = uri;
+
+        //Remove any current lang
+        languages.forEach((x) => {
+            newUrl = newUrl.replace(`/${x.toLowerCase()}`, "");
+        });
+
+        //Add new lang
+        return `/${locale.toLowerCase()}${newUrl}`;
+    }
+
+    const url = new URL(uri);
+    let newUrl = url.toString();
 
     //Remove any current lang
     languages.forEach((x) => {
-      newUrl = newUrl.replace(`/${x.toLowerCase()}`, "");
+        newUrl = newUrl.replace(`${url.host}/${x.toLowerCase()}`, url.host);
     });
 
     //Add new lang
-    return `/${locale.toLowerCase()}${newUrl}`;
-  }
+    newUrl = newUrl.replace(`${url.host}`, `${url.host}/${locale.toLowerCase()}`);
 
-  const url = new URL(uri);
-  let newUrl = url.toString();
-
-  //Remove any current lang
-  languages.forEach((x) => {
-    newUrl = newUrl.replace(`${url.host}/${x.toLowerCase()}`, url.host);
-  });
-
-  //Add new lang
-  newUrl = newUrl.replace(`${url.host}`, `${url.host}/${locale.toLowerCase()}`);
-
-  return newUrl;
+    return newUrl;
 };
 
 export const urlWithoutLocale = (uri: string, locale?: string) =>
-  !locale ? uri : uri.replace("/" + locale.toLowerCase(), "");
+    !locale ? uri : uri.replace("/" + locale.toLowerCase(), "");
 
 const getClientDefault = (): string => {
-  const clientLanguages = window.navigator.languages || [];
-  const clientLanguagesSupported = clientLanguages
-    .map((x) => {
-      const exact = languages.find((l) => l === getCased(x));
-      if (!!exact) return exact;
+    const clientLanguages = window.navigator.languages || [];
+    const clientLanguagesSupported = clientLanguages
+        .map((x) => {
+            const exact = languages.find((l) => l === getCased(x));
+            if (!!exact) return exact;
 
-      const starts = languages.find((l) => l.startsWith(getCased(x)));
-      if (starts) return starts;
+            const starts = languages.find((l) => l.startsWith(getCased(x)));
+            if (starts) return starts;
 
-      return "";
-    })
-    .filter((x) => !!x);
+            return "";
+        })
+        .filter((x) => !!x);
 
-  // console.log(clientLanguages, clientLanguagesSupported);
+    // console.log(clientLanguages, clientLanguagesSupported);
 
-  if (!!clientLanguagesSupported.length) return clientLanguagesSupported[0];
+    if (!!clientLanguagesSupported.length) return clientLanguagesSupported[0];
 
-  return defaultLanguage;
+    return defaultLanguage;
 
-  // const exact = window.navigator.languages.find(
-  //   (x) => !!x && languages.includes(getCased(x))
-  // );
-  // if (!!exact) return exact;
+    // const exact = window.navigator.languages.find(
+    //   (x) => !!x && languages.includes(getCased(x))
+    // );
+    // if (!!exact) return exact;
 
-  // const starts = window.navigator.languages.find((x) =>
-  //   languages.find((x) => !!x && x.startsWith(x.toLowerCase()))
-  // );
-  // if (starts) {
-  //   return languages.find((x) => x.startsWith(starts.toLowerCase()))!;
-  // }
+    // const starts = window.navigator.languages.find((x) =>
+    //   languages.find((x) => !!x && x.startsWith(x.toLowerCase()))
+    // );
+    // if (starts) {
+    //   return languages.find((x) => x.startsWith(starts.toLowerCase()))!;
+    // }
 
-  // return defaultLanguage;
+    // return defaultLanguage;
 };
 
 export const clientDefaultLanguage = getClientDefault();
 
 export const loadStrings = (locale: string) => {
-  let strings = null;
-  if (!strings) strings = stringImports[locale];
+    let strings = null;
+    if (!strings) strings = stringImports[locale];
 
-  if (!strings) {
-    const language = locale.split("-")[0];
-    for (let key in stringImports) {
-      let x = stringImports[key];
+    if (!strings) {
+        const language = locale.split("-")[0];
+        for (let key in stringImports) {
+            let x = stringImports[key];
 
-      if (!x || !stringImports.hasOwnProperty(key)) continue;
+            if (!x || !stringImports.hasOwnProperty(key)) continue;
 
-      if (!!key && key.startsWith(language)) strings = x;
+            if (!!key && key.startsWith(language)) strings = x;
+        }
     }
-  }
 
-  if (!strings) strings = stringImports[defaultLanguage];
+    if (!strings) strings = stringImports[defaultLanguage];
 
-  return strings().then((m: any) => m.default);
+    return strings;
+    // return strings().then((m: any) => m.default);
 };
