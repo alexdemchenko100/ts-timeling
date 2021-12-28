@@ -40,7 +40,7 @@ const CookiesRoute = () => {
       <div className="content-width-1110 content">
         <CookieExplanation />
         <CookiePreferences handleOnClick={handleAcceptAllCookies} />
-        <CookieNecessary />
+        {/* <CookieNecessary /> */}
         <CookieOptional
           handleAcceptAllCookies={handleAcceptAllCookies}
           handleUnacceptAllCookies={handleUnacceptAllCookies}
