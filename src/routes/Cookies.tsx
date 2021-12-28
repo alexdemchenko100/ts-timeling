@@ -32,7 +32,7 @@ const CookiesRoute = () => {
     setConsent(getAllConsent());
   };
 
-  const handleSavePreferences = () => null;
+  const handleSavePreferences = () => () => window.location.reload();
 
   const handleUnacceptAllCookies = () => {
     setCookiePreferences(false);
