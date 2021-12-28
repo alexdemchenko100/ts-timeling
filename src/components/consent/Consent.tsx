@@ -19,7 +19,7 @@ const Consent = () => {
   const [modalIsOpen, setModalIsOpen] = useState(!hasConsent());
   const [consentState, setConsentState] = useState(getConsent());
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded] = useState(false);
 
   const onHandleAccept = () => {
     setModalIsOpen(false);
