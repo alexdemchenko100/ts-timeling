@@ -14,6 +14,7 @@ const strings = {
     "Meld deg på og få sjansen til å bli med på lanseringsfesten vår.",
   follow_us: "Følg oss!",
   coming_soon: "Kommer snart",
+  contact_us: "Kontakt oss",
   cookies: "Cookies",
   cookies_consent: "Ved å bruke vår nettside godtar du vår bruk av cookies. ",
   cookies_text:
