@@ -4,7 +4,6 @@ import {
   CookieHeader,
   CookieExplanation,
   CookiePreferences,
-  CookieNecessary,
   CookieOptional,
   CookieActions,
 } from "../components/cookies";
