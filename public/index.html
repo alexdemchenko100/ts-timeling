@@ -1,134 +1,118 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, viewport-fit:cover"
-    />
-    <meta
-      name="facebook-domain-verification"
-      content="ve5q3qy1q60ira2gjd55puuobi5udz"
-    />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" />
-    <!-- Make manifest work in old browsers  -->
-    <script>
-      window.addEventListener("load", function (ev) {
-        window.requestAnimationFrame(function () {
-          var s = document.createElement("script");
-          s.src =
-            location.protocol +
-            "//" +
-            location.host +
-            "/scripts/pwacompat.min.js";
-          s.setAttribute("crossorigin", "anonymous");
-          document.head.appendChild(s);
-        });
-      });
-    </script>
-    <title>Timeling</title>
-    <meta name="description" content="We have a date for you" />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-P2FQ5J2");
-    </script>
-    <!-- End Google Tag Manager -->
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, viewport-fit:cover"
+        />
+        <meta name="facebook-domain-verification" content="ve5q3qy1q60ira2gjd55puuobi5udz" />
+        <base href="/" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.webmanifest" />
+        <!-- Make manifest work in old browsers  -->
+        <script>
+            window.addEventListener("load", function (ev) {
+                window.requestAnimationFrame(function () {
+                    var s = document.createElement("script");
+                    s.src = location.protocol + "//" + location.host + "/scripts/pwacompat.min.js";
+                    s.setAttribute("crossorigin", "anonymous");
+                    document.head.appendChild(s);
+                });
+            });
+        </script>
+        <title>Timeling</title>
+        <meta name="description" content="We have a date for you" />
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : "";
+                j.async = true;
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, "script", "dataLayer", "GTM-P2FQ5J2");
+        </script>
+        <!-- End Google Tag Manager -->
 
-    <!-- Global site tag (gtag.js) - Google Ads: 10785514455 -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=UA-209671318-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-209671318-1", { anonymize_ip: true });
-      gtag("config", "AW-10785514455", { anonymize_ip: true });
-    </script>
-    <!-- Event snippet for Subscribe Website Custom conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof url != "undefined") {
-            window.location = url;
-          }
-        };
-        gtag("event", "conversion", {
-          send_to: "AW-10785514455/S5XjCLO60P8CENfH95Yo",
-          event_callback: callback,
-        });
-        return false;
-      }
-    </script>
-    <!-- Facebook pixel -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.agent = "plwebflow";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "119888977026940");
-      fbq("track", "PageView");
-    </script>
-    <style>
-      :root {
-        color-scheme: light dark;
-      }
-      html {
-        background-color: #fff;
-      }
-      @media (prefers-color-scheme: dark) {
-        html {
-          background-color: #000;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-P2FQ5J2"
-        height="0"
-        width="0"
-        style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+        <!-- Global site tag (gtag.js) - Google Ads: 10785514455 -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-209671318-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-209671318-1", { anonymize_ip: true });
+            gtag("config", "AW-10785514455", { anonymize_ip: true });
+        </script>
+        <!-- Event snippet for Subscribe Website Custom conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+        <script>
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof url != "undefined") {
+                        window.location = url;
+                    }
+                };
+                gtag("event", "conversion", {
+                    send_to: "AW-10785514455/S5XjCLO60P8CENfH95Yo",
+                    event_callback: callback,
+                });
+                return false;
+            }
+        </script>
+        <!-- Facebook pixel -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.agent = "plwebflow";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+            fbq("init", "119888977026940");
+            fbq("track", "PageView");
+        </script>
+        <style>
+            :root {
+                color-scheme: light dark;
+            }
+            html {
+                background-color: #fff;
+            }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    background-color: #000;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-P2FQ5J2"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
 
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
 </html>
