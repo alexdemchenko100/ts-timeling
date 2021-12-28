@@ -7,7 +7,12 @@ import {
   CookieOptional,
   CookieActions,
 } from "../components/cookies";
-import { hasConsent } from "../lib/consent";
+import {
+  getAllConsent,
+  getConsent,
+  hasConsent,
+  setConsent,
+} from "../lib/consent";
 import RouteContainer from "../ui/RouteContainer";
 
 import "./Cookies.scss";
@@ -22,11 +27,17 @@ const CookiesRoute = () => {
   const routeTitle = formatMessage({ id: "cookies" });
   const routeDescription = formatMessage({ id: "cookies_description" });
 
-  const handleAcceptAllCookies = () => setCookiePreferences(true);
+  const handleAcceptAllCookies = () => {
+    setCookiePreferences(true);
+    setConsent(getAllConsent());
+  };
 
   const handleSavePreferences = () => null;
 
-  const handleUnacceptAllCookies = () => setCookiePreferences(false);
+  const handleUnacceptAllCookies = () => {
+    setCookiePreferences(false);
+    setConsent(getConsent());
+  };
 
   return (
     <RouteContainer
