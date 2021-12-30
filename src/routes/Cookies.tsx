@@ -27,12 +27,17 @@ const CookiesRoute = () => {
   const routeTitle = formatMessage({ id: "cookies" });
   const routeDescription = formatMessage({ id: "cookies_description" });
 
+  const handleSavePreferencesButton = () => window.location.reload();
+
+  const handleAcceptAllCookiesButton = () => {
+    handleAcceptAllCookies();
+    window.location.reload();
+  };
+
   const handleAcceptAllCookies = () => {
     setCookiePreferences(true);
     setConsent(getAllConsent());
   };
-
-  const handleSavePreferences = () => window.location.reload();
 
   const handleUnacceptAllCookies = () => {
     setCookiePreferences(false);
@@ -49,7 +54,7 @@ const CookiesRoute = () => {
       <CookieHeader title={routeTitle} countryName="Nor" />
       <div className="content-width-1110 content">
         <CookieExplanation />
-        <CookiePreferences handleOnClick={handleAcceptAllCookies} />
+        <CookiePreferences handleOnClick={handleAcceptAllCookiesButton} />
         {/* <CookieNecessary /> */}
         <CookieOptional
           handleAcceptAllCookies={handleAcceptAllCookies}
@@ -57,8 +62,8 @@ const CookiesRoute = () => {
           cookiePreferences={cookiesPreferences}
         />
         <CookieActions
-          handleAcceptAllCookies={handleAcceptAllCookies}
-          handleSavePreferences={handleSavePreferences}
+          handleAcceptAllCookies={handleAcceptAllCookiesButton}
+          handleSavePreferences={handleSavePreferencesButton}
         />
       </div>
     </RouteContainer>
