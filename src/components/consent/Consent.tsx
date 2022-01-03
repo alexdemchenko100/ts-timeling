@@ -12,10 +12,13 @@ import classNames from "classnames";
 
 import "./Consent.scss";
 import ConsentForm from "./Form";
+import { useLocation } from "react-router-dom";
 
 // const getHasConsent = () => !!window.localStorage.getItem("cookiesConsent");
 
 const Consent = () => {
+  const { pathname } = useLocation();
+
   const [modalIsOpen, setModalIsOpen] = useState(!hasConsent());
   const [consentState, setConsentState] = useState(getConsent());
 
@@ -30,11 +33,13 @@ const Consent = () => {
     setConsent(consentState);
   };
 
+  const isCookiesPage = pathname.startsWith("/cookies");
+
   return (
     <Modal
       contentLabel="Consent"
       onClose={() => {}}
-      isOpen={modalIsOpen}
+      isOpen={modalIsOpen && !isCookiesPage}
       className={classNames("popup-consent", { expanded: isExpanded })}
     >
       <div className="header">
