@@ -36,20 +36,18 @@ const CookiesRoute = () => {
   };
 
   const handleAcceptAllCookiesButton = () => {
-    handleAcceptAllCookies();
+    setConsent(getAllConsent());
     goToHomepage();
   };
 
   const handleAcceptAllCookies = () => {
     const newConsent = getAllConsent();
     setConsentState(newConsent);
-    setConsent(newConsent);
   };
 
   const handleUnacceptAllCookies = () => {
     const newConsent = getDefaultConsent();
     setConsentState(newConsent);
-    setConsent(newConsent);
   };
 
   return (
