@@ -27,11 +27,16 @@ const CookiesRoute = () => {
   const routeTitle = formatMessage({ id: "cookies" });
   const routeDescription = formatMessage({ id: "cookies_description" });
 
-  const handleSavePreferencesButton = () => window.location.reload();
+  const goToHomepage = () => {
+    window.location.href = window.location.href.replace("/cookies", "");
+  };
+  const handleSavePreferencesButton = () => {
+    goToHomepage();
+  };
 
   const handleAcceptAllCookiesButton = () => {
     handleAcceptAllCookies();
-    window.location.reload();
+    goToHomepage();
   };
 
   const handleAcceptAllCookies = () => {
