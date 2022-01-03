@@ -15,6 +15,8 @@ export const names = {
   ],
 };
 
+const storageName = "consent";
+
 export const getDefaultConsent = (): Consent => {
   const date = new Date();
   date.setDate(date.getDate() + 90);
@@ -32,9 +34,9 @@ export const getAllConsent = (): Consent => {
   };
 };
 
-export const getCurrentConsent = () => {
+export const getStoredConsent = () => {
   try {
-    const string = localStorage.getItem("consent");
+    const string = localStorage.getItem(storageName);
     if (string) {
       const parsed = JSON.parse(string) as Consent;
       if (new Date(parsed.expires) < new Date()) {
@@ -51,7 +53,7 @@ export const getCurrentConsent = () => {
 
 export const getConsent = () => {
   const defaultState = getDefaultConsent();
-  const currentConsent = getCurrentConsent();
+  const currentConsent = getStoredConsent();
 
   if (!currentConsent) return defaultState;
 
@@ -63,13 +65,13 @@ export const getConsent = () => {
 };
 
 export const setConsent = (consent: Consent) => {
-  localStorage.setItem("consent", JSON.stringify(consent));
+  localStorage.setItem(storageName, JSON.stringify(consent));
   if (consent.ads) {
     (window as any).fbq("consent", "grant");
   }
 };
 export const hasConsent = (type?: "ads") => {
-  if (!type) return !!getCurrentConsent();
+  if (!type) return !!getStoredConsent();
 
   const consent = getConsent();
   if (type === "ads") return consent.ads;

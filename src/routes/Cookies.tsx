@@ -10,7 +10,7 @@ import {
 import {
   getAllConsent,
   getConsent,
-  hasConsent,
+  getDefaultConsent,
   setConsent,
 } from "../lib/consent";
 import RouteContainer from "../ui/RouteContainer";
@@ -20,8 +20,8 @@ import "./Cookies.scss";
 const CookiesRoute = () => {
   const { formatMessage } = useIntl();
 
-  const [cookiesPreferences, setCookiePreferences] = useState(
-    hasConsent("ads")
+  const [consent, setConsentState] = useState(
+    getConsent() //Get current stored consent
   );
 
   const routeTitle = formatMessage({ id: "cookies" });
@@ -31,6 +31,7 @@ const CookiesRoute = () => {
     window.location.href = window.location.href.replace("/cookies", "");
   };
   const handleSavePreferencesButton = () => {
+    setConsent(consent);
     goToHomepage();
   };
 
@@ -40,13 +41,15 @@ const CookiesRoute = () => {
   };
 
   const handleAcceptAllCookies = () => {
-    setCookiePreferences(true);
-    setConsent(getAllConsent());
+    const newConsent = getAllConsent();
+    setConsentState(newConsent);
+    setConsent(newConsent);
   };
 
   const handleUnacceptAllCookies = () => {
-    setCookiePreferences(false);
-    setConsent(getConsent());
+    const newConsent = getDefaultConsent();
+    setConsentState(newConsent);
+    setConsent(newConsent);
   };
 
   return (
@@ -64,7 +67,7 @@ const CookiesRoute = () => {
         <CookieOptional
           handleAcceptAllCookies={handleAcceptAllCookies}
           handleUnacceptAllCookies={handleUnacceptAllCookies}
-          cookiePreferences={cookiesPreferences}
+          cookiePreferences={consent.ads}
         />
         <CookieActions
           handleAcceptAllCookies={handleAcceptAllCookiesButton}
