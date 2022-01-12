@@ -1,4 +1,6 @@
 const strings = {
+  accept_all: "Aksepter alt",
+  set_preferences: "Angi preferanser",
   months: "Måneder",
   days: "Dager",
   hours: "Timer",
