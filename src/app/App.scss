@@ -469,9 +469,10 @@ main {
 
 .content-width {
     max-width: 100%;
-    width: 900px;
+    width: 1240px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
 }
 
 .content-width-1110 {
@@ -560,5 +561,155 @@ main {
         &::before {
             background-color: var(--color-theme);
         }
+    }
+}
+
+
+.how-work-section{
+    background-color: var(--work-bg);
+    padding: 80px 0 140px;
+    .container{
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .work-title {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 52px;
+        letter-spacing: -0.03em;
+        color: #1C1C1C;
+        text-align: center;
+        margin-bottom: 65px;
+    }
+    .work-ul {
+        display: flex;
+        text-align: center;
+        margin: 0 -15px;
+        li {
+            padding: 15px;
+            h6 {
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 31px;
+                text-align: center;
+                color: #1C1C1C;
+                margin-bottom: 10px;
+            }
+            p {
+                font-family: DM Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 130%;
+                text-align: center;
+                color: #1C1C1C;
+                max-width: 260px;
+                margin: 0 auto 30px;
+            }
+            .work-mobile-img {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.how-work-mobile-section{
+    display: none;
+}
+@media all and (max-width: 1429px) {
+    header .logo {
+        left: 15px;
+    }
+    
+    .how-work-section {
+        padding: 80px 0;
+    }
+}
+@media all and (max-width: 1199px) {
+    header .logo {
+        left: 15px;
+    }
+    
+    .how-work-section {
+        padding: 80px 0;
+    }
+    
+    header .hero-flex .hero-info-img {
+        max-width: 420px;
+    }
+    
+    header .hero-flex .hero-info {
+        width: calc(100% - 420px);
+    }
+}
+
+@media all and (max-width: 991px) {
+    .how-work-mobile-section{
+        padding: 65px 0 75px;
+        background-color: var(--color-white);
+        display: block;
+        .container{
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .work-title {
+            font-family: DM Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #1C1C1C;
+            margin-bottom: 65px;
+        }
+        .mobile-work-ul {
+            padding: 0 15px;
+            li {
+                text-align: center;
+                &:nth-last-child(2) {
+                    margin: 80px 0;
+                }
+                span {
+                    display: block;
+                    margin-bottom: 24px;
+                }
+                h6 {
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 36px;
+                    text-align: center;
+                    color: #1C1C1C;
+                    margin-bottom: 8px;
+                }
+                p {
+                    font-family: DM Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 140%;
+                    text-align: center;
+                    color: #1C1C1C;
+                    margin: 0 auto;
+                    max-width: 310px;
+                }
+            }
+            
+        }
+    }
+    .how-work-section{
+        display: none;
     }
 }
