@@ -78,6 +78,7 @@ const Home = () => {
                     <h2 className="work-title">
                         <FormattedMessage id="how_title" />
                     </h2>
+                      <p className="work-title-dec"><FormattedMessage id="how_title_dec" /></p>
                     <ul className="work-ul">
                         <li>
                             <h6>
