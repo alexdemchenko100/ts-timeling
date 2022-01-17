@@ -1,6 +1,7 @@
 import Logo from "./Logo";
-import { Link  } from "react-router-dom";
+import Link from "./global/Link";
 import "./Header.scss";
+
 import { FormattedMessage } from "react-intl";
 import { useMemo } from "react";
 import {
@@ -120,10 +121,10 @@ const Header = ({ children }: any) => {
               <li><FormattedMessage id="home_des03start" /> <b><FormattedMessage id="home_des03middle" /></b></li>
             </ul>
             <div className="btn-wrap">
-              <Link to="">
+              <Link href="https://apps.apple.com/app/id1536561208">
                 <img src={"assets/eng/app-store.svg"} alt="app-store" />
               </Link>
-              <Link to="">
+              <Link href="https://play.google.com/store/apps/details?id=com.timeling.android">
                 <img src={"assets/eng/play-store.svg"} alt="play-store" />
               </Link>
             </div>
