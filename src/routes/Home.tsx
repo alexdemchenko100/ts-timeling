@@ -78,6 +78,9 @@ const Home = () => {
                     <h2 className="work-title">
                         <FormattedMessage id="how_title" />
                     </h2>
+                    <p className="work-title-dec">
+                        <FormattedMessage id="how_title_dec" />
+                    </p>
                     <ul className="work-ul">
                         <li>
                             <h6>
@@ -235,7 +238,7 @@ const Home = () => {
                                 <FormattedMessage id="m_work_title_02" />
                             </h6>
                             <p>
-                                <FormattedMessage id="m_work_dec_02" />{" "}
+                                <FormattedMessage id="m_work_dec_02" />
                             </p>
                         </li>
                         <li>
@@ -272,7 +275,7 @@ const Home = () => {
                                 <FormattedMessage id="m_work_title_03" />
                             </h6>
                             <p>
-                                <FormattedMessage id="m_work_dec_01" />
+                                <FormattedMessage id="m_work_dec_03" />
                             </p>
                         </li>
                     </ul>

@@ -581,7 +581,18 @@ main {
         line-height: 52px;
         color: #1C1C1C;
         text-align: center;
-        margin-bottom: 65px;
+        margin-bottom: 16px;
+    }
+    .work-title-dec{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #1C1C1C;
+        max-width: 730px;
+        margin: 0 auto 70px;
     }
     .work-ul {
         display: flex;
