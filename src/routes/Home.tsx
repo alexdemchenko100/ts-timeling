@@ -87,32 +87,31 @@ const Home = () => {
               <h6><FormattedMessage id="work_title_01" /></h6>
               <p><FormattedMessage id="work_dec_01" /></p>
               <div className="work-mobile-img">
-                <img src={langPath === "/en-gb/" ? "assets/eng/01_event_eng.png" : "assets/nor/01_event_nor.png"} alt="01_event_eng" />
+                <img src={langPath === "/nb-no/" ? "assets/nor/01_event_nor.png"  : "assets/eng/01_event_eng.png" } alt="01_event_eng" />
               </div>
             </li>
             <li>
               <h6><FormattedMessage id="work_title_02" /></h6>
               <p><FormattedMessage id="work_dec_02" /></p>
               <div className="work-mobile-img">
-                <img src={langPath === "/en-gb/" ? "assets/eng/02_matches_eng.png" : "assets/nor/02_event_nor.png"} alt="02_matches_eng" />
+                <img src={langPath === "/nb-no/" ? "assets/nor/02_event_nor.png"  : "assets/eng/02_matches_eng.png" } alt="02_matches_eng" />
               </div>
             </li>
             <li>
               <h6><FormattedMessage id="work_title_03" /></h6>
               <p><FormattedMessage id="work_dec_03" /></p>
               <div className="work-mobile-img">
-                <img src={langPath === "/en-gb/" ? "assets/eng/03_chat_eng.png" : "assets/nor/03_event_nor.png"} alt="03_chat_eng" />
+                <img src={langPath === "/nb-no/" ? "assets/nor/03_event_nor.png"  : "assets/eng/03_chat_eng.png" } alt="03_chat_eng" />
               </div>
             </li>
             <li>
               <h6><FormattedMessage id="work_title_04" /></h6>
               <p><FormattedMessage id="work_dec_04" /></p>
               <div className="work-mobile-img">
-                <img src={langPath === "/en-gb/" ? "assets/eng/04_confirm_eng.png" : "assets/nor/04_event_nor.png"} alt="04_confirm_eng" />
+                <img src={langPath === "/nb-no/" ? "assets/nor/04_event_nor.png"  : "assets/eng/04_confirm_eng.png" } alt="04_confirm_eng" />
               </div>
             </li>
           </ul>
-         
         </div>
       </section>
       <section className="how-work-mobile-section">
