@@ -1,7 +1,6 @@
 import Header from "../components/Header";
 import { FormattedMessage } from "react-intl";
 import RouteContainer from "../ui/RouteContainer";
-import Countdown from "react-countdown";
 
 const Home = () => {
     const onClickNotify = () => {
@@ -24,53 +23,6 @@ const Home = () => {
                     <button className="button big primary" onClick={onClickNotify}>
                         <FormattedMessage id="join_the_waitlist" />
                     </button>
-                    <div className="coming-soon">
-                        <Countdown
-                            date={new Date(2022, 0, 19)}
-                            renderer={({ days, hours, minutes, seconds }) => {
-                                const months = days >= 61 ? 2 : days >= 31 ? 1 : 0;
-                                const days2 =
-                                    days >= 61 ? days - 61 : days >= 31 ? days - 31 : days;
-                                return (
-                                    <div className="countdown">
-                                        <div>
-                                            <span className="value">{months}</span>
-                                            <span className="name">
-                                                <FormattedMessage id="months" />
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <span className="value">{days2}</span>
-                                            <span className="name">
-                                                <FormattedMessage id="days" />
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <span className="value">{hours}</span>
-                                            <span className="name">
-                                                <FormattedMessage id="hours" />
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <span className="value">{minutes}</span>
-                                            <span className="name">
-                                                <FormattedMessage id="minutes" />
-                                            </span>
-                                        </div>
-                                        <div>
-                                            <span className="value">{seconds}</span>
-                                            <span className="name">
-                                                <FormattedMessage id="seconds" />
-                                            </span>
-                                        </div>
-                                    </div>
-                                );
-                            }}
-                        />
-                        <span className="soon">
-                            <FormattedMessage id="coming_soon" />
-                        </span>
-                    </div>
                 </div>
             </Header>
             <section className="how-work-section">

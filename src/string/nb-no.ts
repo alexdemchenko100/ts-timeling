@@ -73,15 +73,15 @@ const strings = {
     work_title_03: "Test the waters",
     work_title_04: "Let’s meet up",
     work_dec_01: " Set a day, time and activity for your next event.",
-    work_dec_02: "See who is interested and Test the waters.",
-    work_dec_03: "before you confirm the date and meet up",
-    work_dec_04: "Confirm the date and get ready to meet.",
+    work_dec_02: "See who is interested and test the waters.",
+    work_dec_03: "Chat and see if you have a good vibe before you meet.",
+    work_dec_04: "Confirm the event and get ready to meet.",
     m_work_title_01: "Create",
     m_work_dec_01:
         "Set a day, time and activity for your next event. See who is interested and test the waters.",
     m_work_title_02: "Explore",
     m_work_dec_02: "Find and filter events near you. Drop a like to show you’re interested!",
     m_work_title_03: "Confirm",
-    m_work_dec_03: "Check your likes, match and confirm the event. It's time to meet!",
+    m_work_dec_03: "Show interest, check your likes and make matches. It's time to meet!",
 };
 export default strings;
