@@ -1,4 +1,3 @@
-import qs from "qs";
 import { withBaseURLApi, withBaseURL } from "./config";
 import {
   clientDefaultLanguage,
@@ -147,7 +146,12 @@ export const get = async <T>(
 ) => {
   let fullUrl = url;
   if (!!data) {
-    const qstring = qs.stringify(data);
+    const qdata = { ...data };
+    for (let [key, value] of Object.entries(qdata)) {
+      if (value instanceof Date) qdata[key] = value.toISOString();
+      if (value === undefined) delete qdata[key];
+    }
+    const qstring = new URLSearchParams(qdata).toString();
     if (!!qstring) fullUrl = fullUrl + "?" + qstring;
   }
 
