@@ -4,39 +4,39 @@ $mobile-max: 735px;
 $desktop-min: 736px;
 
 :root {
-    $spacer: 1rem;
+  $spacer: 1rem;
 
-    $spacers: (
-        0: 0,
-        1: math.div($spacer, 3),
-        2: math.div($spacer, 2),
-        3: $spacer,
-        4: $spacer * 2,
-        5: $spacer * 3,
-    );
+  $spacers: (
+    0: 0,
+    1: math.div($spacer, 3),
+    2: math.div($spacer, 2),
+    3: $spacer,
+    4: $spacer * 2,
+    5: $spacer * 3,
+  );
 
-    --spacing-xs: #{map-get($spacers, 1)};
-    --spacing-sm: #{map-get($spacers, 2)};
-    --spacing: #{map-get($spacers, 3)};
-    --spacing-md: #{map-get($spacers, 4)};
-    --spacing-lg: #{map-get($spacers, 5)};
+  --spacing-xs: #{map-get($spacers, 1)};
+  --spacing-sm: #{map-get($spacers, 2)};
+  --spacing: #{map-get($spacers, 3)};
+  --spacing-md: #{map-get($spacers, 4)};
+  --spacing-lg: #{map-get($spacers, 5)};
 
-    --border-radius-xs: #{map-get($spacers, 1)};
-    --border-radius-sm: #{map-get($spacers, 2)};
-    --border-radius: #{map-get($spacers, 3)};
-    --border-radius-md: #{map-get($spacers, 4)};
-    --border-radius-lg: #{map-get($spacers, 5)};
+  --border-radius-xs: #{map-get($spacers, 1)};
+  --border-radius-sm: #{map-get($spacers, 2)};
+  --border-radius: #{map-get($spacers, 3)};
+  --border-radius-md: #{map-get($spacers, 4)};
+  --border-radius-lg: #{map-get($spacers, 5)};
 
-    --box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
+  --box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.16);
 
-    --font-size-base: 1rem;
-    --font-size-sm: 0.8rem;
+  --font-size-base: 1rem;
+  --font-size-sm: 0.8rem;
 
-    --content-width: 900px;
-    --content-spacer: 32px;
+  --content-width: 1100px;
+  --content-spacer: 32px;
 
-    // Colors
-    --color-black: #1a1a1c;
-    --home-banner-bg : linear-gradient(360deg, #FFAF8D 25.12%, #FFD8C8 100%);
-    --work-bg : #FFEEE6;
+  // Colors
+  --color-black: #1a1a1c;
+  --home-banner-bg: linear-gradient(360deg, #ffaf8d 25.12%, #ffd8c8 100%);
+  --work-bg: #ffeee6;
 }

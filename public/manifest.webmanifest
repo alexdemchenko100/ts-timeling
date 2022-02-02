@@ -2,11 +2,11 @@
   "short_name": "Timeling",
   "name": "Timeling",
   "description": "Meet Timeling. Your calendar-based dating app for real life connections.",
-  "start_url": "/?utm_source=app",
+  "start_url": ".",
   "scope": ".",
   "display": "standalone",
-  "theme_color": "#f8f8fe",
-  "background_color": "#f8f8fe",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "orientation": "portrait-primary",
   "iarc_rating_id": "02f31b12-781b-4059-82b8-0239402ffe74",
   "icons": [
@@ -112,38 +112,6 @@
     }
   ],
   "categories": ["social"],
-  "screenshots": [
-    {
-      "src": "screenshots/1small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/1big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/2small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/2big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/3small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/3big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    }
-  ],
   "prefer_related_applications": true,
   "related_applications": [
     {
