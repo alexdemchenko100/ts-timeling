@@ -63,7 +63,7 @@ const strings = {
   home_des01start: "Timeling er en",
   home_des01middle: "kalenderbasert app",
   home_des01end:
-    "som lar deg lage eventer, utforske og møte likesinnede. Gå på dater og møt nye venner.",
+    "som lar deg lage eventer, utforske og møte likesinnede. Gå på dater og møt nye venner!",
   home_des02start: "Nye venner og",
   home_des02middle: "kanskje også kjærligheten",
   home_des02end: "av livet ditt.",
