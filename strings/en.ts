@@ -67,7 +67,7 @@ const strings = {
   _has_been_unsubscribed: "{0} has been unsubscribed",
   we_value_your_privacy: "We value your privacy",
   home_title: "Life is short, let's meet up.",
-  home_des01start: "Timeling is a ",
+  home_des01start: "Timeling is a",
   home_des01middle: "calendar-based app",
   home_des01end:
     "that lets you create events, explore and meet like-minded people. Go on dates and meet new friends. ",

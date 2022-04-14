@@ -20,11 +20,11 @@ header {
     align-items: center;
     position: absolute;
     top: 40px;
-    max-width: 1240px;
+    max-width: calc(var(--content-width) + 60px);
     margin: 0 auto;
     width: 100%;
     left: 50%;
-    padding: 0 15px;
+    padding: 0 30px;
     transform: translateX(-50%);
   }
   > .container {
@@ -96,18 +96,30 @@ header {
     }
   }
   .hero-flex {
+    --header-spacer-width: 5%;
     display: flex;
     align-items: center;
     position: absolute;
     top: 55%;
     transform: translate(-50%, -50%);
     left: 50%;
-    max-width: 1240px;
-    padding: 0 15px;
+    max-width: calc(
+      var(--content-width) + 60px + var(--header-spacer-width) +
+        var(--header-spacer-width)
+    );
+    padding: 0 30px;
     width: 100%;
+    @media all and (max-width: 1280px) {
+      --header-spacer-width: 0;
+    }
+    &::before {
+      display: flex;
+      content: "";
+      width: var(--header-spacer-width);
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
     .hero-info {
-      width: calc(100% - 600px);
-      padding-right: 22px;
       h1 {
         font-family: DM Sans;
         font-style: normal;
@@ -138,10 +150,24 @@ header {
           display: block;
           margin-right: 27px;
         }
+
+        .mobile-only {
+          @media all and (min-width: $desktop-min) {
+            display: none;
+          }
+        }
+        .desktop-only {
+          @media all and (max-width: $mobile-max) {
+            display: none;
+          }
+        }
       }
     }
+
     .hero-info-img {
-      max-width: 575px;
+      max-width: 545px;
+      margin-right: -30px; //Hax fix image file crop
+      margin-bottom: 40px;
       img {
         width: 100%;
         height: 100%;
@@ -152,7 +178,12 @@ header {
   }
 }
 
-@media all and (max-width: 991px) {
+@media all and (min-width: 991px) {
+  header {
+    min-height: 800px;
+  }
+}
+@media all and (max-width: 990px) {
   header .logo {
     left: 15px;
     top: 40px;
@@ -210,7 +241,7 @@ header {
   }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: $mobile-max) {
   header .hero-flex .hero-info ul li {
     text-align: left;
   }

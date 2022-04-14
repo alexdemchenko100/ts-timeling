@@ -60,9 +60,10 @@ const strings = {
   _has_been_unsubscribed: "{0} har blitt avmeldt",
   we_value_your_privacy: "Vi tar ditt personvern på alvor",
   home_title: "Life is short, let's meet up", //Livet er for kort la oss møtes.",
-  home_des01start: "Timeling er en ",
-  home_des01middle: "calendar-based app",
-  home_des01end: "som lar deg skape, utforske og møte likesinnede.",
+  home_des01start: "Timeling er en",
+  home_des01middle: "kalenderbasert app",
+  home_des01end:
+    "som lar deg lage eventer, utforske og møte likesinnede. Gå på dater og møt nye venner!",
   home_des02start: "Nye venner og",
   home_des02middle: "kanskje også kjærligheten",
   home_des02end: "av livet ditt.",

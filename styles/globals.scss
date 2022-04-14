@@ -41,7 +41,7 @@
   --font-size-base: 1rem;
   --font-size-sm: 0.8rem;
 
-  --content-width: 900px;
+  --content-width: 1100px;
   --content-spacer: 32px;
 
   // Colors
@@ -527,7 +527,7 @@ main {
 
 .content-width {
   max-width: 100%;
-  width: 1240px;
+  width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
   padding: 0 15px;
@@ -626,7 +626,7 @@ main {
   background-color: var(--work-bg);
   padding: 80px 0 140px;
   .container {
-    max-width: 1240px;
+    max-width: var(--content-width);
     margin: 0 auto;
     padding: 0 15px;
   }
@@ -662,7 +662,7 @@ main {
         font-family: DM Sans;
         font-style: normal;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 31px;
         text-align: center;
         color: #1c1c1c;
@@ -678,6 +678,7 @@ main {
         color: #1c1c1c;
         max-width: 260px;
         margin: 0 auto 30px;
+        min-height: 39px;
       }
       .work-mobile-img {
         width: 100%;
@@ -703,20 +704,8 @@ main {
   }
 }
 @media all and (max-width: 1199px) {
-  header .logo {
-    left: 15px;
-  }
-
   .how-work-section {
     padding: 80px 0;
-  }
-
-  header .hero-flex .hero-info-img {
-    max-width: 420px;
-  }
-
-  header .hero-flex .hero-info {
-    width: calc(100% - 420px);
   }
 }
 
@@ -726,7 +715,7 @@ main {
     background-color: var(--color-white);
     display: block;
     .container {
-      max-width: 1240px;
+      max-width: var(--content-width);
       margin: 0 auto;
       padding: 0 15px;
     }

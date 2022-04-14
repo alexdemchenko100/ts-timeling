@@ -1,12 +1,12 @@
 {
   "short_name": "Timeling",
   "name": "Timeling",
-  "description": "Meet Timeling. Your calendar-based dating app for real life connections.",
-  "start_url": "/?utm_source=app",
+  "description": "Life is short, let's meet up.",
+  "start_url": ".",
   "scope": ".",
   "display": "standalone",
-  "theme_color": "#f8f8fe",
-  "background_color": "#f8f8fe",
+  "theme_color": "#000000",
+  "background_color": "#000000",
   "orientation": "portrait-primary",
   "iarc_rating_id": "02f31b12-781b-4059-82b8-0239402ffe74",
   "icons": [
@@ -14,90 +14,104 @@
       "src": "/app_96x96.png",
       "type": "image/png",
       "sizes": "96x96",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_120x120.png",
       "type": "image/png",
       "sizes": "120x120",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_152x152.png",
       "type": "image/png",
       "sizes": "152x152",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_180x180.png",
       "type": "image/png",
       "sizes": "180x180",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_192x192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_228x228.png",
       "type": "image/png",
       "sizes": "228x228",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_256x256.png",
       "type": "image/png",
       "sizes": "256x256",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_310x310.png",
       "type": "image/png",
       "sizes": "310x310",
-      "purpose": "maskable any"
+      "purpose": "maskable"
     },
     {
       "src": "/app_512x512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable any"
+      "purpose": "maskable"
+    },
+
+    {
+      "src": "/app_96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/app_120x120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "/app_152x152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/app_180x180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "/app_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/app_228x228.png",
+      "type": "image/png",
+      "sizes": "228x228"
+    },
+    {
+      "src": "/app_256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/app_310x310.png",
+      "type": "image/png",
+      "sizes": "310x310"
+    },
+    {
+      "src": "/app_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "categories": ["social"],
-  "screenshots": [
-    {
-      "src": "screenshots/1small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/1big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/2small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/2big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/3small.png",
-      "sizes": "1284x2778",
-      "type": "image/png"
-    },
-    {
-      "src": "screenshots/3big.png",
-      "sizes": "2048x2732",
-      "type": "image/png"
-    }
-  ],
   "prefer_related_applications": true,
   "related_applications": [
     {
@@ -108,6 +122,11 @@
       "platform": "play",
       "url": "https://play.google.com/store/apps/details?id=com.timeling.android",
       "id": "com.timeling.android"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/id1536561208",
+      "id": "1536561208"
     },
     {
       "platform": "windows",

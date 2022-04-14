@@ -170,17 +170,33 @@ const Header = ({ children }: any) => {
               </li>
             </ul>
             <div className="btn-wrap">
-              <Link href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
-                <Image
-                  src={"/assets/en/app-store.svg"}
-                  alt="app-store"
-                  width={184}
-                  height={58}
+              <Link
+                className="desktop-only"
+                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=iOS_Button&adj_redirect=https%3A%2F%2Fapps.apple.com%2Fes%2Fapp%2Ftimeling-dating-in-real-life%2Fid1536561208"
+              >
+                <img src={`/assets/${locale}/app-store.svg`} alt="app-store" />
+              </Link>
+              <Link
+                className="desktop-only"
+                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Android_button&adj_redirect=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.timeling.android%26gl%3DES"
+              >
+                <img
+                  src={`/assets/${locale}/play-store.svg`}
+                  alt="play-store"
                 />
               </Link>
-              <Link href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
-                <Image
-                  src={"/assets/en/play-store.svg"}
+              <Link
+                className="mobile-only"
+                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F"
+              >
+                <img src={`/assets/${locale}/app-store.svg`} alt="app-store" />
+              </Link>
+              <Link
+                className="mobile-only"
+                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F"
+              >
+                <img
+                  src={`/assets/${locale}/play-store.svg`}
                   alt="play-store"
                   width={184}
                   height={58}
