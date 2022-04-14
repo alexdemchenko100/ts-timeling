@@ -173,7 +173,7 @@ const Header = ({ children }: any) => {
               </li>
             </ul>
             <div className="btn-wrap">
-              <Link href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
+              <Link className="desktop-only" href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=iOS_Button&adj_redirect=https%3A%2F%2Fapps.apple.com%2Fes%2Fapp%2Ftimeling-dating-in-real-life%2Fid1536561208">
                 <img
                   src={
                     langPath === "/nb-no/"
@@ -183,7 +183,27 @@ const Header = ({ children }: any) => {
                   alt="app-store"
                 />
               </Link>
-              <Link href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
+              <Link className="desktop-only" href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Android_button&adj_redirect=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.timeling.android%26gl%3DES">
+                <img
+                  src={
+                    langPath === "/nb-no/"
+                      ? "assets/nor/play-store.svg"
+                      : "assets/eng/play-store.svg"
+                  }
+                  alt="play-store"
+                />
+              </Link>
+              <Link className="mobile-only" href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
+                <img
+                  src={
+                    langPath === "/nb-no/"
+                      ? "assets/nor/app-store.svg"
+                      : "assets/eng/app-store.svg"
+                  }
+                  alt="app-store"
+                />
+              </Link>
+              <Link className="mobile-only" href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F">
                 <img
                   src={
                     langPath === "/nb-no/"

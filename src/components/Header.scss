@@ -150,6 +150,17 @@ header {
           display: block;
           margin-right: 27px;
         }
+
+        .mobile-only {
+          @media all and (min-width: $desktop-min) {
+            display: none;
+          }
+        }
+        .desktop-only {
+          @media all and (max-width: $mobile-max) {
+            display: none;
+          }
+        }
       }
     }
 
