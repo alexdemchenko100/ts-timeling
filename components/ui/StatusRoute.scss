@@ -1,0 +1,104 @@
+@keyframes spin-pulse {
+  0%,
+  16.5% {
+    transform: rotate(0deg);
+  }
+  33.5%,
+  66% {
+    transform: rotate(180deg);
+  }
+  83.5%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes petal-grow-n {
+  0%,
+  16.5% {
+    transform: translateY(0);
+  }
+  33.5%,
+  66% {
+    transform: translateY(45%);
+  }
+  83.5%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes petal-grow-e {
+  0%,
+  16.5% {
+    transform: translateX(0);
+  }
+  33.5%,
+  66% {
+    transform: translateX(45%);
+  }
+  83.5%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes petal-grow-s {
+  0%,
+  16.5% {
+    transform: translateY(0);
+  }
+  33.5%,
+  66% {
+    transform: translateY(-45%);
+  }
+  83.5%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes petal-grow-w {
+  0%,
+  16.5% {
+    transform: translateX(0);
+  }
+  33.5%,
+  66% {
+    transform: translateX(-45%);
+  }
+  83.5%,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.status-route {
+  //This is also in index.html
+  .loader {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    color: hsla(18, 100%, 78%, 1);
+
+    animation: spin-pulse 2.5s ease-in-out infinite;
+  }
+  .loader .ring#n {
+    animation: petal-grow-n 2.5s ease-in-out infinite;
+    transform-origin: bottom center;
+  }
+  .loader .ring#e {
+    animation: petal-grow-e 2.5s ease-in-out infinite;
+    transform-origin: center right;
+  }
+  .loader .ring#s {
+    animation: petal-grow-s 2.5s ease-in-out infinite;
+    transform-origin: top center;
+  }
+  .loader .ring#w {
+    animation: petal-grow-w 2.5s ease-in-out infinite;
+    transform-origin: center left;
+  }
+}
