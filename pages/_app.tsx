@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import { AppProps } from "next/app";
 import Head from "next/head";
 import Script from "next/script";
@@ -6,22 +7,23 @@ import Layout from "../components/ui/Layout";
 import "../styles/globals.scss";
 
 const App = ({ Component, pageProps }: AppProps) => {
-  return (
-    <>
-      <Head>
-        <meta charSet="utf-8" />
-        <link rel="shortcut icon" href="/favicon.ico?v=2" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, viewport-fit:cover"
-        />
-        <base href="/" />
-        <link rel="manifest" href="/manifest.webmanifest" />
-        <title>Timeling</title>
-        <meta name="description" content="Life is short, let's meet up." />
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+    return (
+        <>
+            <Head key="head-01">
+                <meta charSet="utf-8" />
+                <link rel="shortcut icon" href="/favicon.ico?v=2" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, viewport-fit:cover"
+                />
+                <base href="/" />
+                <link rel="manifest" href="/manifest.webmanifest" />
+                <title>Timeling</title>
+                <meta name="description" content="Life is short, let's meet up." />
+                <Script
+                    id="setup_script"
+                    dangerouslySetInnerHTML={{
+                        __html: `
       window.addEventListener("load", function (ev) {
         window.requestAnimationFrame(function () {
           var s = document.createElement("script");
@@ -34,15 +36,16 @@ const App = ({ Component, pageProps }: AppProps) => {
           document.head.appendChild(s);
         });
       });`,
-          }}
-        />
-        <meta
-          name="facebook-domain-verification"
-          content="ve5q3qy1q60ira2gjd55puuobi5udz"
-        />
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+                    }}
+                />
+                <meta
+                    name="facebook-domain-verification"
+                    content="ve5q3qy1q60ira2gjd55puuobi5udz"
+                />
+                <Script
+                    id="google_id"
+                    dangerouslySetInnerHTML={{
+                        __html: `
               (function (w, d, s, l, i) {
                 w[l] = w[l] || [];
                 w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -53,15 +56,16 @@ const App = ({ Component, pageProps }: AppProps) => {
                 j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
                 f.parentNode.insertBefore(j, f);
               })(window, document, "script", "dataLayer", "GTM-P2FQ5J2");`,
-          }}
-        />
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=UA-209671318-1"
-        ></script>
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `
+                    }}
+                />
+                <script
+                    async
+                    src="https://www.googletagmanager.com/gtag/js?id=UA-209671318-1"
+                ></script>
+                <Script
+                    id="google_analytics"
+                    dangerouslySetInnerHTML={{
+                        __html: `
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         window.dataLayer.push(arguments);
@@ -70,11 +74,12 @@ const App = ({ Component, pageProps }: AppProps) => {
       gtag("config", "UA-209671318-1", { anonymize_ip: true });
       gtag("config", "AW-10785514455", { anonymize_ip: true });
     `,
-          }}
-        />
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `!(function (f, b, e, v, n, t, s) {
+                    }}
+                />
+                <Script
+                    id="facebook"
+                    dangerouslySetInnerHTML={{
+                        __html: `!(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
           n.callMethod
@@ -100,22 +105,22 @@ const App = ({ Component, pageProps }: AppProps) => {
       );
       fbq("init", "119888977026940");
       fbq("track", "PageView");`,
-          }}
-        />
-      </Head>
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-P2FQ5J2"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        ></iframe>
-      </noscript>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </>
-  );
+                    }}
+                />
+            </Head>
+            <noscript>
+                <iframe
+                    src="https://www.googletagmanager.com/ns.html?id=GTM-P2FQ5J2"
+                    height="0"
+                    width="0"
+                    style={{ display: "none", visibility: "hidden" }}
+                ></iframe>
+            </noscript>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
+        </>
+    );
 };
 
 export default App;

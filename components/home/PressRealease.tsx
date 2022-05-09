@@ -27,19 +27,19 @@ export const PressRelease = () => {
                 </div>
                 <div className="press_release_content">
                     <a href={LINK_VART_OSLO} target="_blank" rel="noopener noreferrer">
-                        <Image src={oslo_avisa} placeholder="blur" />
+                        <Image src={oslo_avisa} placeholder="blur" alt="vartoslo logo" />
                     </a>
                     <a href={LINK_EXTRA_AVISEN} target="_blank" rel="noopener noreferrer">
-                        <Image src={extra_avisen} placeholder="blur" />
+                        <Image src={extra_avisen} placeholder="blur" alt="extraavisen logo" />
                     </a>
                     <a href={LINK_ELLE} target="_blank" rel="noopener noreferrer">
-                        <Image src={elle_magazine} placeholder="blur" />
+                        <Image src={elle_magazine} placeholder="blur" alt="elle magazine logo" />
                     </a>
                     <a href={LINK_NEWSREPORT} target="_blank" rel="noopener noreferrer">
-                        <Image src={newsreport} placeholder="blur" />
+                        <Image src={newsreport} placeholder="blur" alt="your news net logo" />
                     </a>
                     <a href={LINK_KOM24} target="_blank" rel="noopener noreferrer">
-                        <Image src={kom24} placeholder="blur" />
+                        <Image src={kom24} placeholder="blur" alt="kom24 logo" />
                     </a>
                 </div>
             </div>
