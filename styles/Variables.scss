@@ -1,2 +1,24 @@
-$mobile-max: 735px;
-$desktop-min: 736px;
+// Breakpoints
+$mobile: 768px;
+$tablet: 990px;
+$sm-desktop: 1200px;
+
+$tablet-min: $mobile;
+$sm-desktop-min: $tablet;
+$desktop-min: $sm-desktop;
+$mobile-max: $mobile - 1;
+$tablet-max: $tablet - 1;
+$sm-desktop-max: $sm-desktop - 1;
+
+// Colors
+$secondary: #FDECD2;
+$charcoal: #222222;
+$black: #000000;
+$black2: #1C1C1C;
+$white: #ffffff;
+$white2: #e5e5e5;
+$dark-peach: #FFAF8D;
+$main-peach: #FFF7F3;
+$peach2: #FFCCB7;
+$peach3: #FFD8C9;
+$gray: #E6E6E6;

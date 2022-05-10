@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { FormattedMessage } from "react-intl";
 
 import Header from "../components/Header";
-import { HowDoesItWork, PressRelease } from "../components/home";
+import { HowDoesItWork, PressRelease, Hero } from "../components/home";
 import RouteContainer from "../components/ui/RouteContainer";
 
 const Index = () => {
@@ -15,6 +15,7 @@ const Index = () => {
     return (
         <RouteContainer title={routeTitle} description={routeDescription} name="home">
             <Header></Header>
+            <Hero></Hero>
             <section className="how-work-section">
                 <div className="container">
                     <h2 className="work-title">

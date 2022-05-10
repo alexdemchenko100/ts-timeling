@@ -1,7 +1,5 @@
 import Logo from "./Logo";
 import Link from "./global/Link";
-import Image from "next/image";
-import { FormattedMessage } from "react-intl";
 import { useRouter } from "next/router";
 
 const flags: any = {
@@ -31,12 +29,12 @@ const flags: any = {
     ),
 };
 
-const Header = ({ children }: any) => {
+const Header = ({ theme }: { theme?: string }) => {
     const { asPath, locale } = useRouter();
 
     return (
         <header>
-            <div className="header-wrap">
+            <div className={`header-wrap ${theme}`} >
                 <Logo />
                 <div className="language">
                     <ul className="social-icons">
@@ -133,68 +131,18 @@ const Header = ({ children }: any) => {
                     )}
                 </div>
             </div>
-            <div className="container">
-                <div className="hero-flex">
-                    <div className="hero-info">
-                        <h1>
-                            <FormattedMessage id="home_title" />
-                        </h1>
-                        <ul>
-                            <li>
-                                <FormattedMessage id="home_des01start" />{" "}
-                                <b>
-                                    <FormattedMessage id="home_des01middle" />
-                                </b>{" "}
-                                <FormattedMessage id="home_des01end" />
-                            </li>
-
-                            <li>
-                                <FormattedMessage id="home_des03start" />{" "}
-                                <b>
-                                    <FormattedMessage id="home_des03middle" />
-                                </b>
-                            </li>
-                        </ul>
-                        <div className="btn-wrap">
-                            <Link
-                                className="desktop-only"
-                                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=iOS_Button&adj_redirect=https%3A%2F%2Fapps.apple.com%2Fes%2Fapp%2Ftimeling-dating-in-real-life%2Fid1536561208"
-                            >
-                                <img src={`/assets/${locale}/app-store.svg`} alt="app-store" />
-                            </Link>
-                            <Link
-                                className="desktop-only"
-                                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Android_button&adj_redirect=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.timeling.android%26gl%3DES"
-                            >
-                                <img src={`/assets/${locale}/play-store.svg`} alt="play-store" />
-                            </Link>
-                            <Link
-                                className="mobile-only"
-                                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F"
-                            >
-                                <img src={`/assets/${locale}/app-store.svg`} alt="app-store" />
-                            </Link>
-                            <Link
-                                className="mobile-only"
-                                href="https://rqt5.adj.st/?adj_t=2fdkvp8&adj_campaign=Home_buttons&adj_fallback=https%3A%2F%2Ftimeling.com%2F"
-                            >
-                                <img
-                                    src={`/assets/${locale}/play-store.svg`}
-                                    alt="play-store"
-                                    width={184}
-                                    height={58}
-                                />
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="hero-info-img">
-                        <Image
-                            src={`/assets/${locale}/main_screenshots.png`}
-                            alt="explore page in app"
-                            width={575}
-                            height={656}
-                        />
-                    </div>
+            <div className={`mobile-header-wrap ${theme}`} >
+                <div className="navbar">
+                    {/* Mobile Logo */}
+                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                        <path d="M34 16.9999C33.9965 14.7821 33.1829 12.6421 31.7121 10.9822C30.2414 9.32235 28.2149 8.25701 26.0137 7.98657C25.7432 5.78528 24.6778 3.75866 23.0178 2.28786C21.3579 0.817054 19.2177 0.00342716 16.9998 0C14.7821 0.00347884 12.642 0.817136 10.9821 2.28794C9.32224 3.75875 8.25693 5.78534 7.98656 7.98657C5.78534 8.25694 3.75875 9.32224 2.28794 10.9821C0.817137 12.642 0.00347866 14.7821 0 16.9999C0.00347086 19.2176 0.817119 21.3578 2.28792 23.0177C3.75872 24.6776 5.78532 25.743 7.98657 26.0134C8.25693 28.2146 9.32224 30.2412 10.9821 31.7121C12.642 33.1829 14.7821 33.9965 16.9999 34C19.2177 33.9966 21.3579 33.1829 23.0179 31.7121C24.6778 30.2413 25.7433 28.2147 26.0137 26.0134C28.2149 25.7429 30.2414 24.6775 31.7122 23.0176C33.1829 21.3577 33.9965 19.2176 34 16.9999ZM16.9999 2.34777C18.5993 2.3506 20.1457 2.92178 21.363 3.95935C22.5803 4.99693 23.3892 6.43335 23.6453 8.01218C22.264 8.20803 20.9462 8.71897 19.7939 9.50547C18.6416 10.292 17.6856 11.333 16.9999 12.548C16.3143 11.333 15.3584 10.292 14.2061 9.50549C13.0539 8.71899 11.7362 8.20805 10.3549 8.01218C10.6109 6.43339 11.4197 4.99698 12.6369 3.95939C13.8541 2.92181 15.4004 2.35061 16.9999 2.34777ZM23.6104 10.3898C23.3497 11.7002 22.7062 12.9037 21.7615 13.8484C20.8167 14.7931 19.613 15.4364 18.3027 15.697C18.5635 14.3867 19.2069 13.1831 20.1517 12.2385C21.0964 11.2938 22.3001 10.6505 23.6104 10.3898ZM15.697 15.697C14.3868 15.4364 13.1832 14.793 12.2385 13.8484C11.2938 12.9037 10.6505 11.7001 10.3898 10.3898C11.7001 10.6505 12.9037 11.2938 13.8484 12.2385C14.793 13.1832 15.4364 14.3868 15.697 15.697ZM2.34777 16.9999C2.35062 15.4004 2.92182 13.8541 3.9594 12.6369C4.99698 11.4197 6.43339 10.611 8.01218 10.355C8.20805 11.7362 8.71899 13.0539 9.50548 14.2061C10.292 15.3584 11.333 16.3143 12.5479 16.9999C11.333 17.6856 10.292 18.6415 9.5055 19.7938C8.719 20.9461 8.20806 22.2638 8.01218 23.645C6.43337 23.389 4.99695 22.5801 3.95937 21.3629C2.92179 20.1457 2.3506 18.5993 2.34777 16.9999ZM15.697 18.3027C15.4364 19.613 14.7931 20.8166 13.8484 21.7613C12.9037 22.7061 11.7001 23.3494 10.3898 23.6101C10.6505 22.2998 11.2938 21.0962 12.2385 20.1515C13.1831 19.2068 14.3867 18.5634 15.697 18.3027ZM16.9999 31.6522C15.4004 31.6494 13.8541 31.0782 12.6369 30.0406C11.4197 29.003 10.6109 27.5666 10.3549 25.9878C11.7362 25.7919 13.0539 25.2809 14.2062 24.4944C15.3584 23.7078 16.3143 22.6668 16.9999 21.4518C17.6856 22.6669 18.6416 23.7079 19.7939 24.4944C20.9462 25.281 22.264 25.7919 23.6453 25.9878C23.3892 27.5667 22.5803 29.0031 21.363 30.0406C20.1457 31.0782 18.5993 31.6494 16.9999 31.6522ZM18.3027 18.3027C19.6131 18.5634 20.8167 19.2067 21.7615 20.1514C22.7063 21.0961 23.3497 22.2998 23.6104 23.6101C22.3001 23.3495 21.0964 22.7061 20.1516 21.7614C19.2069 20.8167 18.5635 19.6131 18.3027 18.3027ZM25.9881 23.645C25.7922 22.2637 25.2812 20.946 24.4947 19.7937C23.7081 18.6415 22.6671 17.6855 21.4521 16.9999C22.6671 16.3143 23.7081 15.3584 24.4946 14.2062C25.2812 13.0539 25.7922 11.7362 25.9881 10.355C27.5668 10.611 29.0032 11.4198 30.0407 12.637C31.0783 13.8541 31.6494 15.4005 31.6522 16.9999C31.6494 18.5993 31.0783 20.1456 30.0408 21.3629C29.0032 22.5801 27.5668 23.3889 25.9881 23.645Z" fill="currentColor"/>
+                    </svg>
+                    {/* More icon */}
+                    <svg width="24" height="42" viewBox="0 0 24 42" fill="none">
+                        <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        <circle cx="12" cy="21" r="2" fill="currentColor"/>
+                        <circle cx="12" cy="30" r="2" fill="currentColor"/>
+                    </svg>
                 </div>
             </div>
         </header>

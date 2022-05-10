@@ -1,20 +1,48 @@
 @import "../styles/Variables";
 
 header {
-  height: 100vh;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   text-align: initial;
-  background: var(--home-banner-bg);
-  background-size: cover;
-  // background-attachment: fixed;
-  background-position: center;
   color: var(--color-white);
   position: relative;
+
   @media all and (max-width: $mobile-max) {
     text-align: center;
   }
+
+  .mobile-header-wrap {
+    display: none;
+
+    &.light {
+      .navbar {
+        background: $white;
+        color: $black2;
+      }
+    }
+
+    &.dark {
+      .navbar {
+        background: $charcoal;
+        color: $white;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 20px;
+      color: $black2;
+      background: linear-gradient(315.4deg, $peach2 2.18%, $peach3 99.28%);
+    }
+
+    @media all and (max-width: $mobile-max) {
+      display: block;
+    }
+  }
+
   .header-wrap {
     display: flex;
     align-items: center;
@@ -26,27 +54,56 @@ header {
     left: 50%;
     padding: 0 30px;
     transform: translateX(-50%);
+
+    &.dark {
+      .logo {
+        path {
+          fill: $white;
+        }
+      }
+
+      .language {
+        a {
+          color: $white;
+        }
+      }
+
+      .social-icons a path {
+        fill: $white;
+      }
+    }
+
+    @media all and (max-width: $mobile-max) {
+      display: none;
+    }
   }
-  > .container {
+
+  & > .container {
     padding: 0 60px;
     z-index: 2;
+
     @media all and (max-width: $mobile-max) {
       padding: 0 20px;
     }
   }
+
   .logo {
     width: 160px;
+
     path {
-      fill: #000;
+      fill: $black;
     }
+
     @media all and (min-width: $desktop-min) {
       width: 190px;
     }
   }
+
   p {
     &.big {
       font-size: 1.5em;
     }
+
     margin: var(--spacing-sm) 0;
   }
 
@@ -59,130 +116,153 @@ header {
       right: 1em;
       top: 1em;
     }
+
     margin-left: auto;
     font-size: 0.6rem;
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
     align-items: center;
-    > svg {
+
+    >svg {
       width: 24px;
       margin-right: 0.5em;
     }
+
     a {
       text-decoration: none;
-      color: #000;
+      color: $black;
       font-style: normal;
       font-weight: bold;
       font-size: 18.1311px;
       line-height: 10px;
     }
   }
+
   .social-icons {
     display: flex;
     align-items: center;
     margin-right: 40px;
+
     a {
       margin-left: 24px;
       display: block;
+
       path {
-        fill: #000;
+        fill: $black;
         transition: all 0.5s;
       }
+
       &:hover path {
-        fill: #fff;
+        fill: $white;
         transition: all 0.5s;
       }
     }
   }
-  .hero-flex {
-    --header-spacer-width: 5%;
+}
+
+.hero-flex {
+  --header-spacer-width: 5%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-width: calc(var(--content-width) + 60px + var(--header-spacer-width) + var(--header-spacer-width));
+  padding: 0 30px;
+  width: 100%;
+
+  @media all and (max-width: 1280px) {
+    --header-spacer-width: 0;
+  }
+
+  &::before {
     display: flex;
-    align-items: center;
-    position: absolute;
-    top: 55%;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    max-width: calc(
-      var(--content-width) + 60px + var(--header-spacer-width) +
-        var(--header-spacer-width)
-    );
-    padding: 0 30px;
-    width: 100%;
-    @media all and (max-width: 1280px) {
-      --header-spacer-width: 0;
+    content: "";
+    width: var(--header-spacer-width);
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .hero-info {
+    h1 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 62px;
+      color: $black2;
+      margin-bottom: 16px;
     }
-    &::before {
-      display: flex;
-      content: "";
-      width: var(--header-spacer-width);
-      flex-shrink: 0;
-      flex-grow: 0;
-    }
-    .hero-info {
-      h1 {
-        font-family: DM Sans;
+
+    ul {
+      list-style: disc;
+      padding-left: 25px;
+      margin-bottom: 70px;
+
+      li {
+        font-family: "DM Sans";
         font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 62px;
-        color: #1c1c1c;
-        margin-bottom: 16px;
-      }
-      ul {
-        list-style: disc;
-        padding-left: 25px;
-        margin-bottom: 70px;
-        li {
-          font-family: DM Sans;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 20px;
-          line-height: 140%;
-          color: #1c1c1c;
-          margin-bottom: 10px;
-        }
-      }
-      .btn-wrap {
-        display: flex;
-        align-items: center;
-        a {
-          display: block;
-          margin-right: 27px;
-        }
-
-        .mobile-only {
-          @media all and (min-width: $desktop-min) {
-            display: none;
-          }
-        }
-        .desktop-only {
-          @media all and (max-width: $mobile-max) {
-            display: none;
-          }
-        }
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 140%;
+        color: $black2;
+        margin-bottom: 10px;
       }
     }
 
-    .hero-info-img {
-      max-width: 545px;
-      margin-right: -30px; //Hax fix image file crop
-      margin-bottom: 40px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: center;
+    .btn-wrap {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: block;
+        margin-right: 27px;
+      }
+
+      .mobile-only {
+        @media all and (min-width: $desktop-min) {
+          display: none;
+        }
+      }
+
+      .desktop-only {
+        @media all and (max-width: $mobile-max) {
+          display: none;
+        }
       }
     }
   }
+
+  .hero-info-img {
+    max-width: 545px;
+    margin-right: -30px; //Hax fix image file crop
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  background: var(--home-banner-bg);
+  background-size: cover;
+  // background-attachment: fixed;
+  background-position: center;
 }
 
 @media all and (min-width: 991px) {
-  header {
+  .hero {
     min-height: 800px;
   }
 }
+
 @media all and (max-width: 990px) {
   header .logo {
     left: 15px;
@@ -193,15 +273,15 @@ header {
     padding: 80px 0;
   }
 
-  header .hero-flex .hero-info-img {
+  .hero .hero-flex .hero-info-img {
     max-width: 420px;
   }
 
-  header .hero-flex .hero-info {
+  .hero .hero-flex .hero-info {
     width: 100%;
   }
 
-  header .hero-flex {
+  .hero .hero-flex {
     position: relative;
     transform: unset;
     width: 100%;
@@ -215,7 +295,7 @@ header {
     order: 1;
   }
 
-  header .hero-flex .hero-info-img {
+  .hero .hero-flex .hero-info-img {
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -223,7 +303,6 @@ header {
 
   header {
     height: auto;
-    padding: 120px 0 70px;
     display: block;
   }
 
@@ -232,41 +311,45 @@ header {
     right: 15px;
   }
 
-  header .hero-flex .hero-info h1 {
+  .hero .hero-flex .hero-info h1 {
     text-align: center;
     font-size: 32px;
   }
+
   header .social-icons {
     display: none;
   }
 }
 
 @media all and (max-width: $mobile-max) {
-  header .hero-flex .hero-info ul li {
+  .hero .hero-flex .hero-info ul li {
     text-align: left;
   }
 
-  header .hero-flex .hero-info ul {
+  .hero .hero-flex .hero-info ul {
     margin-bottom: 56px;
   }
 
-  header .hero-flex .hero-info .btn-wrap {
+  .hero .hero-flex .hero-info .btn-wrap {
     flex-wrap: wrap;
   }
 
-  header .hero-flex .hero-info .btn-wrap a {
+  .hero .hero-flex .hero-info .btn-wrap a {
     display: block;
     width: 100%;
     margin: 5px 0;
   }
-  header .hero-flex .hero-info h1 {
+
+  .hero .hero-flex .hero-info h1 {
     line-height: 46px;
     margin-bottom: 40px;
   }
+
   header .logo {
     margin-bottom: 40px;
   }
-  header .language > svg {
+
+  header .language>svg {
     width: 16px;
   }
 
@@ -274,12 +357,15 @@ header {
     font-size: 12px;
     line-height: 8px;
   }
-  header .hero-flex .hero-info {
+
+  .hero .hero-flex .hero-info {
     padding-right: 0;
   }
-  footer > .bottom .links a {
+
+  footer>.bottom .links a {
     margin-left: 0;
   }
+
   header .header-wrap {
     position: relative;
     top: 0;
@@ -294,9 +380,5 @@ header {
 
   header .logo {
     margin: 0 auto 40px;
-  }
-
-  header {
-    padding-top: 100px;
   }
 }

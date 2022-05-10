@@ -2,6 +2,8 @@
 
 @import "./Variables";
 @import "../pages/Cookies";
+@import "./pages/AboutUs";
+
 @import "../components/consent/Consent";
 @import "../components/consent/Form";
 @import "../components/global/Icon";
@@ -808,5 +810,13 @@ main {
                 margin: var(--spacing-lg) auto;
             }
         }
+    }
+}
+
+.mobile-only {
+    display: block;
+
+    @media (min-width: $tablet-min) {
+        display: none;
     }
 }
